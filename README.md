@@ -30,3 +30,66 @@ The total amount of Swifts that are targeted to be added to the economy in the i
 **Stage 2:** After the 80 Billion cap has been reached by following the formula of Stage 1, Stage 2 will come into effect. During this stage new Swifts will be given out to users at an inflation rate decided by the Delegated Nodes to all users in the ecosystem. The target inflation rate is ~5% per year to maintain a healhy economy.
 
 **Region Multiplier:** Several different income tiers will exist based on cost of living associated with each region. The tiers and the multipliers associated with them will be decided by the Delegated Nodes. The region that each citizen belongs to will be validated by Identity Providers when added to the blockchain.
+
+## DAO Based Governance
+The Swift Protocol features an internal system that simulates a decentralized government. Swift Citizens have the responsibility to elect representitives that will have various powers within the government system. These Delegated Nodes are required to both maintain the blockchain while occasionally creating new blocks as well as active vote on important issues that occur.
+
+### Elections
+Each Swift Citizen has the ability to cast one vote on the network during elections. Nodes that receive the most votes will be elected to serve during that election cycle. The amount of nodes is decided by the following formula: (10 + (swift_citizens/100000))
+
+### Election Durations
+TODO
+
+### Delegated Node Voting
+Nodes have the following abilities
+* Elect new Identity Providers
+* Ban existing Identity Providers
+* Revert the chain state to some time within the past 72 hours
+* Ban Delegated Nodes
+* Elect Replacement Delegated Nodes
+* Choose tiered income levels
+* Choose inflation rate
+* Vote on salary for Delegated Nodes
+* Vote to approve or disapprove Fund Proposals
+
+## Transaction Features
+
+### Transactions Per Second
+TODO
+
+### Buyer / Seller Protections
+TODO
+
+### Speed of transactions
+TODO
+
+### Low Transaction Fees
+TODO
+
+## Reserved Funds
+20 Billion Swifts will be reserved, these Swifts are not controlled by any central source, but rather are under the control of the Delegated Nodes. It is the responsibility of the Delegated Nodes to assign these funds on an as needed basis to Identity Provider, or Swift Citizens in an effort to benefit the success of the Swift Protocol.
+
+### Funding Process
+When a Swift Citizen or Identity Provider requires funds to perform some task they must submit a public Fund Proposal. This proposal will be written in plain text and signed with the requester's private key and then added to the blockchain. Nodes will then have 1 week to vote on the given proposal. Non-votes are counted as Nos. A majority consensus is required for the funds to be transferred.
+
+## Consensus Protocol
+A new consensus mechanism is used in the Swift Protocol that allows for extremely fast block times while still being trustable. The consensus protocol is call Time Based Consensus. 
+
+### Selecting Forgers
+There is a pretermined order to Delegated Node ordered by the votes they received when elected. In a round robin order each node will have a 10 second window to forge a block. If no block is forged during this duration then the next Delegated Node on the list will also have permission to forge a new block.
+
+### Consensus
+Consensus is decided by following the longest chain. Delegated Nodes that attempt to perform a double spend attack by signing multiple blocks will promptly be voted out by other Delegated Nodes. (Insert math here about how many nodes have to be compromised to give a realistic attack vector). 
+
+## Permissions
+
+### Ability to sign
+TODO
+
+## Protections against bad actors
+
+### Skip Attack 
+If nodes are in the following order \[Bad Node]\[Good Node]\[Bad Node] then the two bad nodes can collude to skip over the good node. When it is the first bad node’s time to create a block, they can create a block immediately, and only broadcast to the next bad node in the list. The second bad node can then wait 10 seconds, sign the node, and then broadcast it normally. The chain with the two bad nodes will be accepted since it is longer. While this attack is normally harmless it does allow colluding bad nodes to take control of the network with only 25% +1 of the nodes if the nodes happen to be optimally placed.
+
+### Incubation Periods
+All new Swift Citizens that join the Swift Protocol will be placed into an incubation period of one week. This prevents Identity Providers from creating fake accounts to quickly create a bunch of fake Swifts and gives Nodes sufficient time to ban the offending Identity Provider.
