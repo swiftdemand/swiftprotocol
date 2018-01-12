@@ -18,3 +18,15 @@ Delegated Nodes are responsibile for maintaining full nodes and creating new blo
 
 ### Identity Providers
 Identity Providers are responsible for validating the identity of Swift Citizens and creating new citizens by generating a keypair for each new Swift Citizen and including it on the blockchain. Identity Providers have the added responsibility of protecting the Swift Citizens whose keys they control with buyer and seller protections.
+
+## Income Distribution
+Swifts are distributed to users on a daily basis and will max out at 7 unclaimed days of Swifts.
+
+### Amount
+The total amount of Swifts that are targeted to be added to the economy in the initial stage is 80 Billion. After this stage has been reached stage 2 will kick in limiting the amount of new Swifts that enter the economy to a healthy inflation rate.
+
+**Stage 1:**  In the first stage income will be generated at an accelerated rate so the economy can grow to maturity within a shorter time period. During this period Swift Citizens will receive Swifts dependent on the amount of Swift Citizens that are in the ecosystem. The formula to calculate the Income Distribution Multiplier is as follows: (781250 / (5^(log10(users)))) with a maximum value of 100, and minimum value of 1.
+
+**Stage 2:** After the 80 Billion cap has been reached by following the formula of Stage 1, Stage 2 will come into effect. During this stage new Swifts will be given out to users at an inflation rate decided by the Delegated Nodes to all users in the ecosystem. The target inflation rate is ~5% per year to maintain a healhy economy.
+
+**Region Multiplier:** Several different income tiers will exist based on cost of living associated with each region. The tiers and the multipliers associated with them will be decided by the Delegated Nodes. The region that each citizen belongs to will be validated by Identity Providers when added to the blockchain.
