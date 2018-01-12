@@ -7,10 +7,34 @@ The Swift Protcol is a DAO based protocol that implements the concept of Univers
 ## Abstract
 The Swift Protocol is an implementation of a Decentralized Autonomous Organization (DAO) that provides Universal Basic Income. The Swift currency is desgined to be used a transactional currency and has been designed with nearly instant transaction times, ability to scale to thousands of transactions per second, low transaction fees, and protections for buyers and sellers. Income is distributed on a daily basis to all participants and represents the concept of UBI.
 
-- [DAO based governance](#dao-based-governance)
+- [Account Types](#account-types)
   * [Swift Citizens](#swift-citizens)
+  * [Delegated Nodes](#delegated-nodes)
+  * [Identity Providers](#identity-providers)
+- [Income Distribution](#income-distribution)
+  * [Stages](#stages)
+- [DAO based governance](#dao-based-governance)
+  * [Elections](#elections)
+  * [Election Durations](#election-durations)
+  * [Delegated Node Voting](#delegated-node-voting)
+- [Transaction Capabilities](#transaction-capabilties)
+  * [Transactions Per Second](#transactions-per-second)
+  * [Buyer / Seller Protections](#buyer---seller-protections)
+  * [Speed of transactions](#speed-of-transactions)
+  * [Low Transaction Fees](#low-transaction-fees)
+- [Reserved Funds](#reserved-funds)
+  * [Funding Proposals](#funding-proposals)
+- [Consensus Protocol](#consensus-protocol)
+  * [Selecting Forgers](#selecting-forgers)
+  * [Consensus](#consensus)
+- [Permissions](#permissions)
+  * [Ability To Sign](#ability-to-sign)
+- [Protections](#protections)
+  * [Skip Attack ](#skip-attack)
+  * [Incubation Periods](#incubation-periods)
+  * [Sybil Attacks](#sybil-attacks)
 
-## DAO based governance
+## Account Types
 The Swift Protocol uses a DAO to connect real world control with the blockchain. Different types of users have the ability to vote and change how the system functions based on real world events. This allows the Swift Protocol to remain decentralized  avoiding single points of failure while still enabling identity verification and financial controls.
 
 ### Swift Citizens
@@ -25,7 +49,7 @@ Identity Providers are responsible for validating the identity of Swift Citizens
 ## Income Distribution
 Swifts are distributed to users on a daily basis and will max out at 7 unclaimed days of Swifts.
 
-### Amount
+### Stages
 The total amount of Swifts that are targeted to be added to the economy in the initial stage is 80 Billion. After this stage has been reached stage 2 will kick in limiting the amount of new Swifts that enter the economy to a healthy inflation rate.
 
 **Stage 1:**  In the first stage income will be generated at an accelerated rate so the economy can grow to maturity within a shorter time period. During this period Swift Citizens will receive Swifts dependent on the amount of Swift Citizens that are in the ecosystem. The formula to calculate the Income Distribution Multiplier is as follows: (781250 / (5^(log10(users)))) with a maximum value of 100, and minimum value of 1.
@@ -55,7 +79,7 @@ Nodes have the following abilities
 * Vote on salary for Delegated Nodes
 * Vote to approve or disapprove Fund Proposals
 
-## Transaction Features
+## Transaction Capabilities
 
 ### Transactions Per Second
 TODO
@@ -72,7 +96,7 @@ TODO
 ## Reserved Funds
 20 Billion Swifts will be reserved, these Swifts are not controlled by any central source, but rather are under the control of the Delegated Nodes. It is the responsibility of the Delegated Nodes to assign these funds on an as needed basis to Identity Provider, or Swift Citizens in an effort to benefit the success of the Swift Protocol.
 
-### Funding Process
+### Funding Proposals
 When a Swift Citizen or Identity Provider requires funds to perform some task they must submit a public Fund Proposal. This proposal will be written in plain text and signed with the requester's private key and then added to the blockchain. Nodes will then have 1 week to vote on the given proposal. Non-votes are counted as Nos. A majority consensus is required for the funds to be transferred.
 
 ## Consensus Protocol
@@ -89,10 +113,13 @@ Consensus is decided by following the longest chain. Delegated Nodes that attemp
 ### Ability to sign
 TODO
 
-## Protections against bad actors
+## Protections
 
 ### Skip Attack 
 If nodes are in the following order \[Bad Node]\[Good Node]\[Bad Node] then the two bad nodes can collude to skip over the good node. When it is the first bad node’s time to create a block, they can create a block immediately, and only broadcast to the next bad node in the list. The second bad node can then wait 10 seconds, sign the node, and then broadcast it normally. The chain with the two bad nodes will be accepted since it is longer. While this attack is normally harmless it does allow colluding bad nodes to take control of the network with only 25% +1 of the nodes if the nodes happen to be optimally placed.
 
 ### Incubation Periods
 All new Swift Citizens that join the Swift Protocol will be placed into an incubation period of one week. This prevents Identity Providers from creating fake accounts to quickly create a bunch of fake Swifts and gives Nodes sufficient time to ban the offending Identity Provider.
+
+### Sybil Attacks
+TODO
