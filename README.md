@@ -31,7 +31,7 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
   * [Skip Attack ](#skip-attack)
   * [Incubation Periods](#incubation-periods)
   * [Sybil Attacks](#sybil-attacks)
-  * [Deactivation of an Identity Provider] (#deactivation-of-an-identity-provider)
+  * [Deactivation of an Identity Provider](#deactivation-of-an-identity-provider)
 - [Connection to SwiftDemand](#connection-to-swiftdemand)
 - [References](#references)
 
