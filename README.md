@@ -31,6 +31,8 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
   * [Skip Attack ](#skip-attack)
   * [Incubation Periods](#incubation-periods)
   * [Sybil Attacks](#sybil-attacks)
+  * [Deactivation of an Identity Provider] (#deactivation-of-an-identity-provider)
+- [Connection to SwiftDemand](#connection-to-swiftdemand)
 - [References](#references)
 
 ## Account Types
@@ -45,8 +47,14 @@ Delegated Nodes are responsibile for maintaining full nodes and creating new blo
 ### Identity Providers
 Identity Providers are responsible for validating the identity of Swift Citizens and creating new citizens by generating a keypair for each new Swift Citizen and including it on the blockchain. Identity Providers have the added responsibility of protecting the Swift Citizens whose keys they control with buyer and seller protections.
 
+**Identity Providers** have the following capabilities:
+* Add new Swift Citizens
+* Freeze Swift Citizens they have verified
+* Make transactions on behalf of Swift Citizens they have verified
+* Delete Swift Citizens they have verified
+
 ## Income Distribution
-Swifts are distributed to users on a daily basis and will max out at 7 unclaimed days of Swifts.
+Swifts are distributed to users on a daily basis and will max out at 7 unclaimed days of Swifts. A Swift Citizen must explicity claim their Swifts at least once per week to convert their *Unclaimed Swifts* to normal *Swifts*. Days are marked by blocks that occur between 00:00 UTC to 23:59 UTC.
 
 ### Stages
 The total amount of Swifts that are targeted to be added to the economy in the initial stage is 80 Billion. After this stage has been reached stage 2 will kick in limiting the amount of new Swifts that enter the economy to a healthy inflation rate.
@@ -120,6 +128,9 @@ All new Swift Citizens that join the Swift Protocol will be placed into an incub
 
 ### Sybil Attacks
 Identity Providers are disincentivized from performing Sybil Attacks as it comes with the risk of getting banned from the platform by Delegated Nodes. Additional safeguards such as the Incubation Period and Rollback Capability also exist to help mitigate any abuse. Swift Citizens can attempt to submit fake documents to gain additional basic income, however they are disincentized from doing so since being caught would result in losing both sources of income. It is expected that a few fake accounts may be created, but Identity Providers will be required to have very strict levels of regulation on how they approve new Swift Citizens which should eliminate most abuse.
+
+### Deactivation of an Identity Provider
+TODO
 
 ## Connection To SwiftDemand
 SwiftDemand is separate from the Swift Protocol, however they are tightly connected and currently being developed by the same team. SwiftDemand will be the initial Identity Provider on the Swift Protocol and all Swifts that exist on SwiftDemand at the time of launching the Swift Mainnet will be transferred at a 1:1 ratio. Swift Citizens however will be required to undergo stricter Identity Verification requirements at this time to comply with KYC\[6] and AML\[7]. 
