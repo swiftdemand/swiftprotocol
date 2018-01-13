@@ -55,7 +55,7 @@ The total amount of Swifts that are targeted to be added to the economy in the i
 
 **Stage 2:** After the 80 Billion cap has been reached by following the formula of Stage 1, Stage 2 will come into effect. During this stage new Swifts will be given out to users at an inflation rate decided by the Delegated Nodes to all users in the ecosystem. The target inflation rate is ~5% per year to maintain a healhy economy.
 
-**Region Multiplier:** Several different income tiers will exist based on cost of living associated with each region. The tiers and the multipliers associated with them will be decided by the Delegated Nodes. The region that each citizen belongs to will be validated by Identity Providers when added to the blockchain.
+**Region Multiplier:** Several different income tiers will exist based on cost of living associated with each region. The tiers and the multipliers associated with them will be decided by the Delegated Nodes. The region that each citizen belongs to will be validated by Identity Providers when added to the blockchain. These multipliers will range between 0.01x to 1.0x.
 
 ## DAO Based Governance
 The Swift Protocol features an internal system that simulates a decentralized government. Swift Citizens have the responsibility to elect representitives that will have various powers within the government system. These Delegated Nodes are required to both maintain the blockchain while occasionally creating new blocks as well as active vote on important issues that occur.
@@ -77,6 +77,8 @@ Nodes have the following abilities
 * Choose inflation rate
 * Vote on salary for Delegated Nodes
 * Vote to approve or disapprove Fund Proposals
+
+To perform these abilities a proposal must be submitted to the blockchain by one Delegated Node. All other Delegated Noes on the network will then vote on the proposal. Any proposal that receives 50% + 1 votes within 24 hours of submission will be executed.
 
 ## Transaction Capabilities
 
@@ -119,6 +121,9 @@ All new Swift Citizens that join the Swift Protocol will be placed into an incub
 ### Sybil Attacks
 Identity Providers are disincentivized from performing Sybil Attacks as it comes with the risk of getting banned from the platform by Delegated Nodes. Additional safeguards such as the Incubation Period and Rollback Capability also exist to help mitigate any abuse. Swift Citizens can attempt to submit fake documents to gain additional basic income, however they are disincentized from doing so since being caught would result in losing both sources of income. It is expected that a few fake accounts may be created, but Identity Providers will be required to have very strict levels of regulation on how they approve new Swift Citizens which should eliminate most abuse.
 
+## Connection To SwiftDemand
+SwiftDemand is separate from the Swift Protocol, however they are tightly connected and currently being developed by the same team. SwiftDemand will be the initial Identity Provider on the Swift Protocol and all Swifts that exist on SwiftDemand at the time of launching the Swift Mainnet will be transferred at a 1:1 ratio. Swift Citizens however will be required to undergo stricter Identity Verification requirements at this time to comply with KYC\[6] and AML\[7]. 
+
 ## References
 
 \[1] https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#transaction-confirmation
@@ -130,3 +135,7 @@ Identity Providers are disincentivized from performing Sybil Attacks as it comes
 \[4] https://en.bitcoin.it/wiki/Transaction_fees
 
 \[5] https://bitcoin.org/bitcoin.pdf
+
+\[6] https://en.wikipedia.org/wiki/Know_your_customer
+
+\[7] https://www.investopedia.com/terms/a/aml.asp
