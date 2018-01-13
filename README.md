@@ -31,6 +31,7 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
   * [Skip Attack ](#skip-attack)
   * [Incubation Periods](#incubation-periods)
   * [Sybil Attacks](#sybil-attacks)
+- [References](#references)
 
 ## Account Types
 The Swift Protocol uses a DAO to connect real world control with the blockchain. Different types of users have the ability to vote and change how the system functions based on real world events. This allows the Swift Protocol to remain decentralized  avoiding single points of failure while still enabling identity verification and financial controls.
@@ -118,8 +119,14 @@ All new Swift Citizens that join the Swift Protocol will be placed into an incub
 ### Sybil Attacks
 Identity Providers are disincentivized from performing Sybil Attacks as it comes with the risk of getting banned from the platform by Delegated Nodes. Additional safeguards such as the Incubation Period and Rollback Capability also exist to help mitigate any abuse. Swift Citizens can attempt to submit fake documents to gain additional basic income, however they are disincentized from doing so since being caught would result in losing both sources of income. It is expected that a few fake accounts may be created, but Identity Providers will be required to have very strict levels of regulation on how they approve new Swift Citizens which should eliminate most abuse.
 
+## References
+
 \[1] https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#transaction-confirmation
+
 \[2] https://www.youtube.com/watch?v=UC6RYwYPnpU
+
 \[3] https://usa.visa.com/run-your-business/small-business-tools/retail.html
+
 \[4] https://en.bitcoin.it/wiki/Transaction_fees
+
 \[5] https://bitcoin.org/bitcoin.pdf
