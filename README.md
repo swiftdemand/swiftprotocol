@@ -40,6 +40,7 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
   * [Sybil Attacks](#sybil-attacks)
   * [Round Robin Order Attack](#round-robin-order-attack)
   * [Deactivation of an Identity Provider](#deactivation-of-an-identity-provider)
+- [Constitution](#constitution)
 - [Connection to SwiftDemand](#connection-to-swiftdemand)
   * [SwiftDemand Features](#swiftdemand-features)
 - [References](#references)
@@ -162,6 +163,25 @@ A group of colluding bad actors could collude to all try to receive a similar nu
 In the event where an Identity Provider attempts to perform fraud their account must be deactivated. In the event where damage has already been caused by the action of the Identity Provider, Delegated Nodes can vote to revert the chain to a previous state with an Identity Provider banned. This will cause a large amount of economic damage, but is meant as a last resort to enable the Swift Protpcol to not be devastated by an attack and to disincentivize Identity Providers from acting poorly. Swift Citizen accounts that belong to that Identity Provider would consequently be orphaned until they were claimed and validated by another Identity Provider.
 
 ## Constitution
+Due to the fact that the Swift Protcol directly interact with the real world through decentralize governance there are certain rules which cannot be programmatically enforced yet are crucial for the Swift Protocol to function as intended. Delegated Nodes or Identity Providers that perform actions in contradiction to the items listed in the constitution should be stripped of their position.
+
+* Regional tiers should be based on the cost of living associated with the geographical region of which the Swift Citizen is a legal resident of.
+* Identity Providers should share a decentralized internal system of identites to guarantee Sybil accounts cannot be created. The internal system should also make any potential transitions of Swift Citizens easier to accomplish.
+* Delegates Node should be removed from their position for the following reasons
+  * Regularly not performing their duty to vote on proposals
+  * Not forging new blocks during their turn within dBFT
+  * Refusal to include block data that does not support them
+  * Unreasonable policy voting that demonstrates harmful favoritism
+* Official announcements should always be signed to protect against forgery
+* The inflation rate should be balanced with the following factors in mind
+  * Avoiding an inflation rate that would overly devalue existing Swifts
+  * The real world effects that would result from a change in the rate
+  * The amount of income required to provide the basic neccesities in life
+* Identity Providers should be removed from their position for the following reasons
+  * Weak approval process allowing the Sybil accounts regardless of the reason being malice or negligence
+  * Failing to provide adequate dispute resolution for transactions
+  * Not performing their duty to approve new Swift Citizens
+  * Unwillingness to cooperate with other Identity Providers on the platform
 
 ## Connection To SwiftDemand
 SwiftDemand is separate from the Swift Protocol, however they are tightly connected and currently being developed by the same team. SwiftDemand will be the initial Identity Provider on the Swift Protocol and all Swifts that exist on SwiftDemand at the time of launching the Swift Mainnet will be transferred at a 1:1 ratio. Swift Citizens however will be required to undergo stricter Identity Verification requirements at this time to comply with KYC\[7] and AML\[8]. 
