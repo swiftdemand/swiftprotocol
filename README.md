@@ -24,7 +24,7 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
   * [Transactions Per Second](#transactions-per-second)
   * [Low Transaction Fees](#low-transaction-fees)
   * [Buyer / Seller Protections](#buyer-/-seller-protections)
-  * [Speed of transactions](#speed-of-transactions)
+  * [Transaction Latency](#transaction-latency)
 - [Compensation](#compensation)
   * [Delegated Node Salary](#delegated-node-salary)
   * [Identity Provider Salary](#identity-provider-salary)
@@ -112,7 +112,7 @@ Transactions have no inherent cost to send on SwiftDemand, however Identity Prov
 ### Buyer / Seller Protections
 Transactions are able to be signed either by an Swift Citizen's private key or the private key of an Identity Provider. This gives Identity Providers the ability to reverse transactions and non-authorized transactions should only be used to settle disputes between buyer and sellers on the platform. When reversing funds is not possible Identity Providers have the responsibility to use the money earned from transaction fees to settle any issues.
 
-### Speed of transactions
+### Transaction Latency
 A single confirmation of a transaction will occur within 0 to 3 seconds on publishing a transaction. Normal transactions should be signed by Identity Providers on behalf of a Swift Citizen when the Citizen initiates an action. Therefore any transaction signed by an Identity Provider has a high level of trust as an Identity Provider is very unlikely to attempt a double spend attack and can be trusted after a single confirmation. Transactions signed by individual citizens should wait for multiple transactions before being treated as final and follows the same logic as layed out in Bitcoin's Whitepaper. \[5]
 
 ## Compensation
