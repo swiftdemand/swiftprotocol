@@ -17,6 +17,7 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
   * [Stage 1](#stage-1)
   * [Stage 2](#stage-2)
   * [Region Multiplier](#region-multiplier)
+  * [Referral System](#referral-system)
 - [DAO based governance](#dao-based-governance)
   * [Elections](#elections)
   * [Election Durations](#election-durations)
@@ -83,6 +84,9 @@ After the 80 Billion cap has been reached by following the formula of Stage 1, S
 
 ### Region Multiplier
 Several different income tiers will exist based on cost of living associated with each region. The tiers and the multipliers associated with them will be decided by the Delegated Nodes. The region that each citizen belongs to will be validated by Identity Providers when added to the blockchain. These multipliers will range between 0.01x to 1.0x.
+
+### Referral System
+When an account is created there is an option to include the public key of the Swift Citizen that referred them. Referral bonuses are given to the referrer calclulated by `5 * Income Distribution Multiplier`. For example if there are 100,000 Swift Citizens at the time of a referral the bonus would be 500 Swifts. 
 
 ## DAO Based Governance
 The Swift Protocol features an internal system that simulates a decentralized government. Swift Citizens have the responsibility to elect representitives known as Delegated Nodes that will have various powers within the government system. These Delegated Nodes are required to both maintain the blockchain, forge new blocks, and vote proposals.
