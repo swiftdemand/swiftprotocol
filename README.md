@@ -210,3 +210,14 @@ SwiftDemand is designed to be an extremely user friendly platform that requires 
 \[7] https://en.wikipedia.org/wiki/Know_your_customer
 
 \[8] https://www.investopedia.com/terms/a/aml.asp
+
+\[9] https://github.com/CirclesUBI/docs/blob/master/Circles.md
+
+**Note**
+This Swift Protocol is designed to evolve over time, improvements will be made as new technology is developed or it becomes clear that a change would improve the system. The core principal of Universal Basic Income will NEVER change.
+
+Here are examples of changes / improvements that may come in the future:
+* Identity verification may be performed in a decentralized manner similar to circles \[9] if proven effective against Sybil attacks
+* Separating the responsibility of running a platform from verifying identities
+* Bounty program to find Sybils
+* A smart contract enforced insurance system provided by Identity Providers
