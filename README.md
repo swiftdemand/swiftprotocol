@@ -40,6 +40,7 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
   * [Round Robin Order Attack](#round-robin-order-attack)
   * [Deactivation of an Identity Provider](#deactivation-of-an-identity-provider)
 - [Connection to SwiftDemand](#connection-to-swiftdemand)
+  * [SwiftDemand Features](#swiftdemand-features)
 - [References](#references)
 
 ## Introduction
@@ -159,6 +160,9 @@ In the event where an Identity Provider attempts to perform fraud their account 
 
 ## Connection To SwiftDemand
 SwiftDemand is separate from the Swift Protocol, however they are tightly connected and currently being developed by the same team. SwiftDemand will be the initial Identity Provider on the Swift Protocol and all Swifts that exist on SwiftDemand at the time of launching the Swift Mainnet will be transferred at a 1:1 ratio. Swift Citizens however will be required to undergo stricter Identity Verification requirements at this time to comply with KYC\[7] and AML\[8]. 
+
+### SwiftDemand Features
+SwiftDemand is designed to be an extremely user friendly platform that requires no prior knowledge of cryptocurrency setting the standard for future Identity Providers. SwiftDemand also provides an API as well as a marketplace to make it as easy as possible to transfer Swifts for Goods and Services.
 
 ## References
 
