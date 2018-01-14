@@ -183,6 +183,7 @@ Due to the fact that the Swift Protcol directly interact with the real world thr
   * Not performing their duty to approve new Swift Citizens
   * Unwillingness to cooperate with other Identity Providers on the platform
 * Proposals that are approved for funding should remain relatively liberal when the protocol is in its early stages and should slowly become more strict over time.
+* Identity Providers should shield the user from the knowledge that there is a one week incubation period and the fact that transactions can take a few second to process. From the user perspective it is important that SwiftDemand appears to function as efficiently as a centralized system. In the event where something does go wrong it is the responsibility of the Identity Provider to take the loss to rememedy the situation.
 
 ## Connection To SwiftDemand
 SwiftDemand is separate from the Swift Protocol, however they are tightly connected and currently being developed by the same team. SwiftDemand will be the initial Identity Provider on the Swift Protocol and all Swifts that exist on SwiftDemand at the time of launching the Swift Mainnet will be transferred at a 1:1 ratio. Swift Citizens however will be required to undergo stricter Identity Verification requirements at this time to comply with KYC\[7] and AML\[8]. 
