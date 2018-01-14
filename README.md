@@ -1,15 +1,16 @@
-# Swift Protocol Whitepaper
+# Swift Protocol White Paper
 
 The Swift Protocol is a DAO based protocol that implements the concept of Universal Basic Income (UBI)
 
 **https://www.swiftdemand.com/**
 
 ## Abstract
-The Swift Protocol is an implementation of a Decentralized Autonomous Organization (DAO) that provides Universal Basic Income. The Swift currency is desgined to be used a transactional currency and has been designed with nearly instant transaction times, ability to scale to thousands of transactions per second, low transaction fees, and protections for buyers and sellers. Income is distributed on a daily basis to all participants and represents the concept of UBI. This paper is written to give a clear understanding of how the Swift Protocol works while remaining simple to read.
+The Swift Protocol is an implementation of a Decentralized Autonomous Organization (DAO) that provides Universal Basic Income. The Swift currency is desgined to be used a transactional currency and has been designed with low transaction latency, ability to scale to thousands of transactions per second, low transaction fees, and dispute resolution for transaction. Income is distributed on a daily basis to all participants and represents the concept of UBI. This paper is written to give a clear understanding of how the Swift Protocol works while remaining simple to read.
 
 - [Introduction](#introduction)
 - [Account Types](#account-types)
   * [Swift Citizens](#swift-citizens)
+  * [Swift Accounts](#swift-accounts)
   * [Delegated Nodes](#delegated-nodes)
   * [Identity Providers](#identity-providers)
 - [Income Distribution](#income-distribution)
@@ -44,25 +45,29 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
 - [References](#references)
 
 ## Introduction
-Universal Basic Income is a critical societal movement that must exist for the world to continue to function as jobs continue to be replaced by automation\[0]. We live in a world with more abundent resources than ever before, yet there are still people who struggle to make ends meet. It is our duty as humans to ensure that every person has access to the core neccessities needed for life. The Swift Protocol is a proposal that creates a DAO with the sole purpose of distributing Universal Basic Income. Worldwide adoption of the Swift Protocol will allow the dream of Universal Basic Income to become realized. The protocol has been designed with practical and proven solutions with additional functionality to aid mass adoption. The Swift Protocol will truly revolutionize society by making basic income a sacred human right.
+Universal Basic Income is a critical societal movement that must exist for the world to continue to function as jobs continue to be replaced by automation\[0]. We live in a world with more abundent resources than ever before, yet there are still people who struggle to make ends meet. It is our duty as humans to ensure that every person has access to the core neccessities needed for life. The Swift Protocol is a proposal that lays the framework for a DAO with the sole purpose of distributing Universal Basic Income. Worldwide adoption of the Swift Protocol will allow the dream of Universal Basic Income to become realized. The protocol has been designed with practical and proven solutions with additional functionality to aid mass adoption. The Swift Protocol will truly revolutionize society by making basic income a sacred human right.
 
 ## Account Types
-The Swift Protocol uses a DAO to connect real world control with the blockchain. Different types of users have the ability to vote and change how the system functions based on real world events. This allows the Swift Protocol to remain decentralized  avoiding single points of failure while still enabling identity verification and financial controls.
+The Swift Protocol functions as a DAO that allows for real world governance to inerconnect with the blockchain. Accounts have the ability to vote on certain events that affect how the Swift Protcol functions. This allows the Swift Protocol to react naturally to real world events by remaining in a fluid state. The Swift Protocol is decentralized to avoide single points of failure while still enabling identity verification and financial controls.
 
 ### Swift Citizens
 Swift Citizens are unique inidividuals that have been validated by an Idenity Provider. Citizens have the ability to add claim to the blockchain once every day (days begin and end at midnight UTC). Swifts will be awarded based on the amount of days passed with a maximum of 7. For example, if the 3 days have passed and a user makes a claim with the current production rate resting at 100 Swifts. 300 Swifts will be awarded.
 
+### Swift Accounts
+Swift Accounts are not connected to any particularly real world identity and therefore do not receive Basic Income. These accounts still must be approved by Identity Providers before being created. An Identity Provider must be linked to all Swift Accounts, however Identity Providers are not allowed to make transactions on behalf of a Swift Account. Delegated Nodes and Identity Providers both inherit from the Swift Account type.
+
 ### Delegated Nodes
-Delegated Nodes are responsibile for maintaining full nodes and creating new blocks. Each election cycle Swift Citizens will sign votes to help choose which Delegated Nodes they would like to represent them. Delegated nodes have the capability to reach consensus on a daily basis to remove or add other Delegated Nodes and Identity Providers.
+Delegated Nodes are responsibile for maintaining full nodes and creating new blocks. Each election cycle Swift Citizens will sign votes to help choose which Delegated Nodes they would like to represent them. Delegated nodes have the capability to vote on proposals to add/remove other Delegated Nodes and Identity Providers.
 
 ### Identity Providers
-Identity Providers are responsible for validating the identity of Swift Citizens and creating new citizens by generating a keypair for each new Swift Citizen and including it on the blockchain. Identity Providers have the added responsibility of protecting the Swift Citizens whose keys they control with buyer and seller protections.
+Identity Providers are responsible for validating the identity of Swift Citizens and creating new citizens by generating a keypair for each new Swift Citizen and including the idenentity on the blockchain. Identity Providers have the added responsibility of protecting Swift Citizens whose keys they control with buyer and seller protections.
 
 **Identity Providers** have the following capabilities:
 * Add new Swift Citizens
-* Freeze Swift Citizens they have verified
+* Freeze/Unfreeze Swift Citizens they have verified
 * Make transactions on behalf of Swift Citizens they have verified
 * Delete Swift Citizens they have verified
+* Rescue orphaned Swift Citizens
 
 ## Income Distribution
 Swifts are distributed to users on a daily basis and will max out at 7 unclaimed days of Swifts. A Swift Citizen must explicity claim their Swifts at least once per week to convert their *Unclaimed Swifts* to normal *Swifts*. Days are marked by blocks that occur between 00:00 UTC to 23:59 UTC.
@@ -154,7 +159,7 @@ Identity Providers are disincentivized from performing Sybil Attacks as it comes
 A group of colluding bad actors could collude to all try to receive a similar number of votes allowing them to be placed in similar locations within the round robin ordering. A double spend attack could then be completed with only a handful of bad nodes. This attack however can only occur once before being detected. Large transactions should wait for a sufficient amount of confirmations to combat against this. Small transactions should be insured by Identity Providers.
 
 ### Deactivation of an Identity Provider
-In the event where an Identity Provider attempts to perform fraud their account must be deactivated. In the event where damage has already been caused by the action of the Identity Provider, Delegated Nodes can vote to revert the chain to a previous state with an Identity Provider banned. This will cause a large amount of economic damage, but is meant as a last resort to enable the Swift Protpcol to not be devastated by an attack and to disincentivize Identity Providers from acting poorly. Swift Citizen accounts that belong to that Identity Provider would consequently be frozen until they were claimed and validated by other Identity Providers.
+In the event where an Identity Provider attempts to perform fraud their account must be deactivated. In the event where damage has already been caused by the action of the Identity Provider, Delegated Nodes can vote to revert the chain to a previous state with an Identity Provider banned. This will cause a large amount of economic damage, but is meant as a last resort to enable the Swift Protpcol to not be devastated by an attack and to disincentivize Identity Providers from acting poorly. Swift Citizen accounts that belong to that Identity Provider would consequently be orphaned until they were claimed and validated by another Identity Provider.
 
 ## Constitution
 
