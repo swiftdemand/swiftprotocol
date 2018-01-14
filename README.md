@@ -131,7 +131,7 @@ Delegated Nodes will each receive an equal salary. The Delegated Nodes themselve
 The Identity Provider salary is decided on by the delegated nodes. The salary is multiplied by the amount of Swifts that have been claimed by Citizens that are under that specific Identity Provider. For example if the salary decided by the Delegated Nodes is 0.01 and the Identity Provider has 100,000 active validated citizens that claimed 5,000,000 Swifts during that day the Identity Provider will receive 50,000 Swifts at the first block after midnight UTC. 
 
 ## Reserved Funds
-20 Billion Swifts will be reserved, these Swifts are not controlled by any central source, but rather are under the control of the Delegated Nodes. It is the responsibility of the Delegated Nodes to assign these funds on an as needed basis to Identity Provider, or Swift Citizens in an effort to benefit the success of the Swift Protocol.
+20 Billion Swifts will be reserved, these Swifts are not controlled by any central source, but rather are under the control of the Delegated Nodes. It is the responsibility of the Delegated Nodes to assign these funds on an as needed basis to Identity Providers, Delegated Nodes, Swift Citizens, or Swift Accounts in an effort to further the success of the Swift Protocol.
 
 ### Funding Proposals
 When a Swift Citizen or Identity Provider requires funds to perform some task they must submit a public Fund Proposal. This proposal will be written in plain text and signed with the requester's private key and then added to the blockchain. Nodes will then have 1 week to vote on the given proposal. Non-votes are counted as Nos. A majority consensus is required for the funds to be transferred.
@@ -182,6 +182,7 @@ Due to the fact that the Swift Protcol directly interact with the real world thr
   * Failing to provide adequate dispute resolution for transactions
   * Not performing their duty to approve new Swift Citizens
   * Unwillingness to cooperate with other Identity Providers on the platform
+* Proposals that are approved for funding should remain relatively liberal when the protocol is in its early stages and should slowly become more strict over time.
 
 ## Connection To SwiftDemand
 SwiftDemand is separate from the Swift Protocol, however they are tightly connected and currently being developed by the same team. SwiftDemand will be the initial Identity Provider on the Swift Protocol and all Swifts that exist on SwiftDemand at the time of launching the Swift Mainnet will be transferred at a 1:1 ratio. Swift Citizens however will be required to undergo stricter Identity Verification requirements at this time to comply with KYC\[7] and AML\[8]. 
