@@ -76,7 +76,7 @@ Swifts are distributed to users on a daily basis and will max out at 7 unclaimed
 The total amount of Swifts that are targeted to be added to the economy in the initial stage is 80 Billion. After this stage has been reached stage 2 will kick in limiting the amount of new Swifts that enter the economy to a healthy inflation rate.
 
 ### Stage 1
-In the first stage income will be generated at an accelerated rate so the economy can grow to maturity within a shorter time period. During this period Swift Citizens will receive Swifts dependent on the amount of Swift Citizens that are in the ecosystem. The formula to calculate the Income Distribution Multiplier is as follows: (781250 / (5^(log10(users)))) with a maximum value of 100, and minimum value of 1.
+In the first stage income will be generated at an accelerated rate so the economy can grow to maturity within a shorter time period. During this period Swift Citizens will receive Swifts dependent on the amount of Swift Citizens that are in the ecosystem. The formula to calculate the Income Distribution Multiplier is as follows: `(781250 / (5^(log10(users))))` with a maximum value of 100, and minimum value of 1.
 
 ### Stage 2
 After the 80 Billion cap has been reached by following the formula of Stage 1, Stage 2 will come into effect. During this stage new Swifts will be given out to users at an inflation rate decided by the Delegated Nodes to all users in the ecosystem. It is the responsibility to choose an inflation rate that will avoid devaluing existing currency while ensuring the distribution is sufficiently large.
@@ -88,7 +88,7 @@ Several different income tiers will exist based on cost of living associated wit
 The Swift Protocol features an internal system that simulates a decentralized government. Swift Citizens have the responsibility to elect representitives known as Delegated Nodes that will have various powers within the government system. These Delegated Nodes are required to both maintain the blockchain, forge new blocks, and vote proposals.
 
 ### Elections
-Each Swift Citizen has the ability to cast one vote on the network during elections. Nodes that receive the most votes will be elected to serve during that election cycle. The amount of nodes is decided by the following formula: (10 + (swift_citizens/100000))
+Each Swift Citizen has the ability to cast one vote on the network during elections. Nodes that receive the most votes will be elected to serve during that election cycle. The amount of nodes is decided by the following formula: `(10 + (swift_citizens/100000))`
 
 ### Election Durations
 Primary elections will occur every 6 months for the first 5 years of existence. Citizens will have a 2 week time period in which they may cast their vote for their preferred delegated node. After the voting period has ended a 1 month grace period will begin, giving time for newly elected nodes to prepare for their responsibility and to prevent any potential splits in the chain.
