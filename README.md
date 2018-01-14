@@ -1,6 +1,6 @@
 # Swift Protocol Whitepaper
 
-The Swift Protcol is a DAO based protocol that implements the concept of Universal Basic Income (UBI)
+The Swift Protocol is a DAO based protocol that implements the concept of Universal Basic Income (UBI)
 
 **https://www.swiftdemand.com/**
 
@@ -153,7 +153,7 @@ Identity Providers are disincentivized from performing Sybil Attacks as it comes
 A group of colluding bad actors could collude to all try to receive a similar number of votes allowing them to be placed in similar locations within the round robin ordering. A double spend attack could then be completed with only a handful of bad nodes. This attack however can only occur once before being detected. Large transactions should wait for a sufficient amount of confirmations to combat against this. Small transactions should be insured by Identity Providers.
 
 ### Deactivation of an Identity Provider
-In the event where an Identity Provider attempts to perform fraud their account must be deactivated. In the event where damage has already been caused by the action of the Identity Provider, Delegated Nodes can vote to revert the chain to a previous state with an Identity Provider banned. This will cause a large amount of economic damage, but is meant as a last resort to enable the Swift Protcol to not be devastated by an attack and to disincentivize Identity Providers from acting poorly. Swift Citizen accounts that belong to that Identity Provider would consequently be frozen until they were claimed and validated by other Identity Providers.
+In the event where an Identity Provider attempts to perform fraud their account must be deactivated. In the event where damage has already been caused by the action of the Identity Provider, Delegated Nodes can vote to revert the chain to a previous state with an Identity Provider banned. This will cause a large amount of economic damage, but is meant as a last resort to enable the Swift Protpcol to not be devastated by an attack and to disincentivize Identity Providers from acting poorly. Swift Citizen accounts that belong to that Identity Provider would consequently be frozen until they were claimed and validated by other Identity Providers.
 
 ## Constitution
 
