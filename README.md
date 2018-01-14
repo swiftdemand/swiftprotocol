@@ -44,7 +44,7 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
 - [References](#references)
 
 ## Introduction
-Universal Basic Income is a critical societal movement that must exist for the world to continue to function in a world that is becoming replaced by automation. We live in a world with more abundent resources than ever before, and having access to the core neccessities needed for life must become a basic human right. The Swift Protocol is a proposal that creates a DAO with the sole purpose of distributing Universal Basic Income. Worldwide adoption of the Swift Protocol will allow the dream of Universal Basic Income to become realized. The protocol has been designed with practical and proven solutions with additional functionality to ensure mass adoption. The Swift Protocol will truly revolutionize how society progresses.
+Universal Basic Income is a critical societal movement that must exist for the world to continue to function as jobs continue to be replaced by automation\[0]. We live in a world with more abundent resources than ever before, yet there are still people who struggle to make ends meet. It is our duty as humans to ensure that every person has access to the core neccessities needed for life. The Swift Protocol is a proposal that creates a DAO with the sole purpose of distributing Universal Basic Income. Worldwide adoption of the Swift Protocol will allow the dream of Universal Basic Income to become realized. The protocol has been designed with practical and proven solutions with additional functionality to aid mass adoption. The Swift Protocol will truly revolutionize society by making basic income a sacred human right.
 
 ## Account Types
 The Swift Protocol uses a DAO to connect real world control with the blockchain. Different types of users have the ability to vote and change how the system functions based on real world events. This allows the Swift Protocol to remain decentralized  avoiding single points of failure while still enabling identity verification and financial controls.
@@ -165,6 +165,8 @@ SwiftDemand is separate from the Swift Protocol, however they are tightly connec
 SwiftDemand is designed to be an extremely user friendly platform that requires no prior knowledge of cryptocurrency setting the standard for future Identity Providers. SwiftDemand also provides an API as well as a marketplace to make it as easy as possible to transfer Swifts for Goods and Services.
 
 ## References
+
+\[0] https://www.mckinsey.com/global-themes/future-of-organizations-and-work/what-the-future-of-work-will-mean-for-jobs-skills-and-wages
 
 \[1] https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#transaction-confirmation
 
