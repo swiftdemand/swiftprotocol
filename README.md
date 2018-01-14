@@ -221,3 +221,5 @@ Here are examples of changes / improvements that may come in the future:
 * Separating the responsibility of running a platform from verifying identities
 * Bounty program to find Sybils
 * A smart contract enforced insurance system provided by Identity Providers
+* Having subsystems for individual countries with unique currencies while remaining automatically exchangable
+* Hashed biometric data stored on the chain as added protection against Sybil attacks
