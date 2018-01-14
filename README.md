@@ -13,7 +13,9 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
   * [Delegated Nodes](#delegated-nodes)
   * [Identity Providers](#identity-providers)
 - [Income Distribution](#income-distribution)
-  * [Stages](#stages)
+  * [Stage 1](#stage-1)
+  * [Stage 2](#stage-2)
+  * [Region Multiplier](#region-multiplier)
 - [DAO based governance](#dao-based-governance)
   * [Elections](#elections)
   * [Election Durations](#election-durations)
@@ -64,14 +66,16 @@ Identity Providers are responsible for validating the identity of Swift Citizens
 ## Income Distribution
 Swifts are distributed to users on a daily basis and will max out at 7 unclaimed days of Swifts. A Swift Citizen must explicity claim their Swifts at least once per week to convert their *Unclaimed Swifts* to normal *Swifts*. Days are marked by blocks that occur between 00:00 UTC to 23:59 UTC.
 
-### Stages
 The total amount of Swifts that are targeted to be added to the economy in the initial stage is 80 Billion. After this stage has been reached stage 2 will kick in limiting the amount of new Swifts that enter the economy to a healthy inflation rate.
 
-**Stage 1:**  In the first stage income will be generated at an accelerated rate so the economy can grow to maturity within a shorter time period. During this period Swift Citizens will receive Swifts dependent on the amount of Swift Citizens that are in the ecosystem. The formula to calculate the Income Distribution Multiplier is as follows: (781250 / (5^(log10(users)))) with a maximum value of 100, and minimum value of 1.
+### Stage 1
+In the first stage income will be generated at an accelerated rate so the economy can grow to maturity within a shorter time period. During this period Swift Citizens will receive Swifts dependent on the amount of Swift Citizens that are in the ecosystem. The formula to calculate the Income Distribution Multiplier is as follows: (781250 / (5^(log10(users)))) with a maximum value of 100, and minimum value of 1.
 
-**Stage 2:** After the 80 Billion cap has been reached by following the formula of Stage 1, Stage 2 will come into effect. During this stage new Swifts will be given out to users at an inflation rate decided by the Delegated Nodes to all users in the ecosystem. The target inflation rate is ~5% per year to maintain a healhy economy.
+### Stage 2
+After the 80 Billion cap has been reached by following the formula of Stage 1, Stage 2 will come into effect. During this stage new Swifts will be given out to users at an inflation rate decided by the Delegated Nodes to all users in the ecosystem. The target inflation rate is ~5% per year to maintain a healhy economy.
 
-**Region Multiplier:** Several different income tiers will exist based on cost of living associated with each region. The tiers and the multipliers associated with them will be decided by the Delegated Nodes. The region that each citizen belongs to will be validated by Identity Providers when added to the blockchain. These multipliers will range between 0.01x to 1.0x.
+### Region Multiplier
+Several different income tiers will exist based on cost of living associated with each region. The tiers and the multipliers associated with them will be decided by the Delegated Nodes. The region that each citizen belongs to will be validated by Identity Providers when added to the blockchain. These multipliers will range between 0.01x to 1.0x.
 
 ## DAO Based Governance
 The Swift Protocol features an internal system that simulates a decentralized government. Swift Citizens have the responsibility to elect representitives known as Delegated Nodes that will have various powers within the government system. These Delegated Nodes are required to both maintain the blockchain, forge new blocks, and vote proposals.
