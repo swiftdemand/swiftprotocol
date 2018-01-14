@@ -73,7 +73,7 @@ The total amount of Swifts that are targeted to be added to the economy in the i
 In the first stage income will be generated at an accelerated rate so the economy can grow to maturity within a shorter time period. During this period Swift Citizens will receive Swifts dependent on the amount of Swift Citizens that are in the ecosystem. The formula to calculate the Income Distribution Multiplier is as follows: (781250 / (5^(log10(users)))) with a maximum value of 100, and minimum value of 1.
 
 ### Stage 2
-After the 80 Billion cap has been reached by following the formula of Stage 1, Stage 2 will come into effect. During this stage new Swifts will be given out to users at an inflation rate decided by the Delegated Nodes to all users in the ecosystem. The target inflation rate is ~5% per year to maintain a healhy economy.
+After the 80 Billion cap has been reached by following the formula of Stage 1, Stage 2 will come into effect. During this stage new Swifts will be given out to users at an inflation rate decided by the Delegated Nodes to all users in the ecosystem. It is the responsibility to choose an inflation rate that will avoid devaluing existing currency while ensuring the distribution is sufficiently large.
 
 ### Region Multiplier
 Several different income tiers will exist based on cost of living associated with each region. The tiers and the multipliers associated with them will be decided by the Delegated Nodes. The region that each citizen belongs to will be validated by Identity Providers when added to the blockchain. These multipliers will range between 0.01x to 1.0x.
