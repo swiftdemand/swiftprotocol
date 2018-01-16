@@ -107,6 +107,7 @@ Nodes have the following abilities
 * Choose tiered income levels
 * Choose inflation rate
 * Vote on salary for Delegated Nodes
+* Vote on relative salary for Identity Providers
 * Vote to approve or disapprove Fund Proposals
 
 To perform these abilities a proposal must be submitted to the blockchain by one Delegated Node. All other Delegated Noes on the network will then vote on the proposal. Any proposal that receives 50% + 1 votes within 24 hours of submission will be executed.
