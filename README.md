@@ -5,7 +5,7 @@ The Swift Protocol is a DAO-based protocol that implements the concept of Univer
 **https://www.swiftdemand.com/**
 
 ## Abstract
-The Swift Protocol is an implementation of a Decentralized Autonomous Organization (DAO) that provides Universal Basic Income. The Swift currency is designed to be used as a transactional currency. It has been designed for low transaction latency[§](#transaction-latency), the ability to scale to thousands of transactions per second[§](#transactions-per-second), low transaction fees[§](#low-transaction-fees), and dispute resolution for transactions[§](#buyer--seller-protections). Income is distributed on a daily basis to all participants and represents the concept of UBI. This paper is written to give a clear understanding of how the Swift Protocol works while remaining simple to read.
+The Swift Protocol is an implementation of a Decentralized Autonomous Organization (DAO) that provides Universal Basic Income. The Swift currency is designed to be used as a transactional currency. It has been designed for [low transaction latency](#transaction-latency), the ability to [scale to thousands of transactions per second](#transactions-per-second), [low transaction fees](#low-transaction-fees), and [dispute resolution for transactions](#buyer--seller-protections). Income is distributed on a daily basis to all participants and represents the concept of UBI. This paper is written to give a clear understanding of how the Swift Protocol works while remaining simple to read.
 
 - [Introduction](#introduction)
 - [Account Types](#account-types)
