@@ -47,13 +47,13 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
 - [References](#references)
 
 ## Introduction
-Universal Basic Income is a critical societal movement that must exist for the world to continue to function as jobs continue to be replaced by automation<sup>[[1]](#1)</sup>. We live in a world with more abundent resources than ever before, yet there are still people who struggle to make ends meet. It is our duty as humans to ensure that every person has access to the core neccessities needed for life. The Swift Protocol is a proposal that lays the framework for a DAO with the sole purpose of distributing Universal Basic Income. Worldwide adoption of the Swift Protocol will allow the dream of Universal Basic Income to become realized. The protocol has been designed with practical and proven solutions with additional functionality to aid mass adoption. The Swift Protocol will truly revolutionize society by making basic income a sacred human right.
+Universal Basic Income is a critical societal movement that must exist for the world to continue to function as jobs continue to be replaced by automation<sup>[[1]](#1)</sup>. We live in a world with more abundent resources than ever before, yet there are still people who struggle to make ends meet. It is our duty as humans to ensure that every person has access to the core neccessities of life. The Swift Protocol is a proposal that lays the framework for a DAO with the purpose of distributing Universal Basic Income. Worldwide adoption of the Swift Protocol will allow the dream of Universal Basic Income to become realized. The protocol has been designed with practical and proven solutions with additional functionality to aid mass adoption.
 
 ## Account Types
-The Swift Protocol functions as a DAO that allows for real world governance to interconnect with the blockchain. Accounts have the ability to vote on certain events that affect how the Swift Protcol functions. This allows the Swift Protocol to react naturally to real world events by remaining in a fluid state. The Swift Protocol is decentralized to avoid single points of failure while still enabling identity verification and financial controls.
+The Swift Protocol functions as a DAO that allows for real-world governance to interconnect with the blockchain. Accounts have the ability to vote on certain events that affect how the Swift Protcol functions. This allows the Swift Protocol to react naturally to real-world events by remaining in a fluid state. The Swift Protocol is decentralized to avoid single points of failure while still enabling identity verification and financial controls.
 
 ### Swift Citizens
-Swift Citizens are unique inidividuals that have been validated by an Idenity Provider. Citizens have the ability to add claim to the blockchain once every day (days begin and end at midnight UTC). Swifts will be awarded based on the amount of days passed with a maximum of 7. For example, if the 3 days have passed and a user makes a claim with the current production rate resting at 100 Swifts. 300 Swifts will be awarded.
+Swift Citizens are unique inidividuals that have been validated by an [Identity Provider](#identity-providers). Citizens have the ability to add claims to the blockchain once every day (days begin and end at midnight UTC). Swifts will be awarded based on the amount of days passed--with a maximum of seven. For example, if the three days have passed and a user makes a claim with the current production rate at 100 Swifts, 300 Swifts will be awarded.
 
 ### Swift Accounts
 Swift Accounts are not connected to any particularly real world identity and therefore do not receive Basic Income. These accounts still must be approved by Identity Providers before being created. An Identity Provider must be linked to all Swift Accounts, however Identity Providers are not allowed to make transactions on behalf of a Swift Account. Delegated Nodes and Identity Providers both inherit from the Swift Account type.
@@ -115,16 +115,16 @@ To perform these abilities a proposal must be submitted to the blockchain by one
 ## Transaction Capabilities
 
 ### Transactions Per Second
-Due to the controlled nature of the Delegated Node network, nodes can work to forge blocks extremely fast with a targeted time of 3 seconds per block. Other algorithms that have implemented proof of stake algorithms such as EOS which has the same functionality of having selected speaker nodes that forge blocks\[1] Have proven that it's possible to scale such a system to 50,000 Transactions Per Section\[2] For comparison Visa is able to scale up to 24,000 TPS \[3]
+Due to the controlled nature of the Delegated Node network, nodes can work to forge blocks extremely fast with a targeted time of 3 seconds per block. Other algorithms that have implemented proof of stake algorithms such as EOS which has the same functionality of having selected speaker nodes that forge blocks<a name="2">[2]</a> Have proven that it's possible to scale such a system to 50,000 Transactions Per Section<a name="3">[3]</a> For comparison Visa is able to scale up to 24,000 TPS <a name="4">[4]</a>.
 
 ### Low Transaction Fees
-Transactions have no inherent cost to send on SwiftDemand, however Identity Providers do have the ability to set transaction fees allowing them to have funds to resolve transaction disputes. The Swift Protocol reserves 80% of each block to be used exclusively for Identity Providers proportional to the amount of Swift Citizens they have verified with a minimum of 10. It is therefore the responsibility of Identity Providers to ensure spam transactions are not added to the chain. The remaining 20% of each block will be open for transactions with a bidding system in a similar manner to how bitcoin functions \[4]
+Transactions have no inherent cost to send on SwiftDemand, however Identity Providers do have the ability to set transaction fees allowing them to have funds to resolve transaction disputes. The Swift Protocol reserves 80% of each block to be used exclusively for Identity Providers proportional to the amount of Swift Citizens they have verified with a minimum of 10. It is therefore the responsibility of Identity Providers to ensure spam transactions are not added to the chain. The remaining 20% of each block will be open for transactions with a bidding system in a similar manner to how bitcoin functions <a name="5">[5]</a>.
 
 ### Buyer / Seller Protections
 Transactions are able to be signed either by an Swift Citizen's private key or the private key of an Identity Provider. This gives Identity Providers the ability to reverse transactions and non-authorized transactions should only be used to settle disputes between buyer and sellers on the platform. When reversing funds is not possible Identity Providers have the responsibility to use the money earned from transaction fees to settle any issues.
 
 ### Transaction Latency
-A single confirmation of a transaction will usually occur within 0 to 3 seconds on publishing a transaction. Normal transactions should be signed by Identity Providers on behalf of a Swift Citizen when the Citizen initiates an action. Therefore any transaction signed by an Identity Provider has a high level of trust as an Identity Provider is very unlikely to attempt a double spend attack and can be trusted after a single confirmation. Transactions signed by individual citizens should wait for multiple transactions before being treated as final and follows the same logic as layed out in Bitcoin's Whitepaper. \[5]
+A single confirmation of a transaction will usually occur within 0 to 3 seconds on publishing a transaction. Normal transactions should be signed by Identity Providers on behalf of a Swift Citizen when the Citizen initiates an action. Therefore any transaction signed by an Identity Provider has a high level of trust as an Identity Provider is very unlikely to attempt a double spend attack and can be trusted after a single confirmation. Transactions signed by individual citizens should wait for multiple transactions before being treated as final; this follows the same logic as layed out in Bitcoin's Whitepaper <a name="6">[6]</a>.
 
 ## Compensation
 Both Delegated Nodes and Identity Providers receive a salary in Swifts for their service. Salary will be paid out on a daily basis at the same time Swift Citizens receive their daily income. The Swifts that are generated will initially be drawn from the 80% pool dedicated to regular Swift Distribution. Once that pool has been fully distributed additional Swifts generated from salaries will be created in addition to the Stage 2 inflation distribution.
@@ -142,10 +142,10 @@ The Identity Provider salary is decided on by the delegated nodes. The salary is
 When a Swift Citizen or Identity Provider requires funds to perform some task they must submit a public Fund Proposal. This proposal will be written in plain text and signed with the requester's private key and then added to the blockchain. Nodes will then have 1 week to vote on the given proposal. Non-votes are counted as Nos. A majority consensus is required for the funds to be transferred.
 
 ## Consensus Protocol
-A new consensus mechanism is used in the Swift Protocol that allows for extremely fast block times while still being trustable. The Swift Protocol uses a modified version of Delegated Byzantine Fault Tolerance \[6] that is implemented by NEO. Instead of having each block signed by a majority of the nodes, consensus will be decided based on the longest chain.
+A new consensus mechanism is used in the Swift Protocol that allows for extremely fast block times while still being trustable. The Swift Protocol uses a modified version of the Delegated Byzantine Fault Tolerance algorithm implemented by NEO<a name="7">[7]</a>. Instead of having each block signed by a majority of the nodes, consensus will be decided based on the longest chain.
 
 ### Selecting Forgers
-When Delegated Nodes are elected, they are placed into an ordered list of blocks that are permitted to forge blocks ordered by the amount of votes received. Nodes will then take turns forging blocks round robin style. When it is a nodes turn to create a block they will have a 10 second window to forge a block. If no block is forged during this duration then the next Delegated Node on the list will also have permission to forge a new block. This will be achieved by using a timestamp server \[5].
+When Delegated Nodes are elected, they are placed into an ordered list of blocks that are permitted to forge blocks ordered by the amount of votes received. Nodes will then take turns forging blocks round robin style. When it is a nodes turn to create a block they will have a 10 second window to forge a block. If no block is forged during this duration then the next Delegated Node on the list will also have permission to forge a new block. This will be achieved by using a timestamp server <a name="6">[6]</a>.
 
 ### Consensus
 Consensus is decided by following the longest chain. Delegated Nodes that attempt to perform a double spend attacks by signing multiple blocks will promptly be voted out by other Delegated Nodes.
@@ -153,7 +153,7 @@ Consensus is decided by following the longest chain. Delegated Nodes that attemp
 ## Protections
 
 ### Skip Attack 
-If nodes are in the following order \[Bad Node]\[Good Node]\[Bad Node] then the two bad nodes can collude to skip over the good node. When it is the first bad node’s time to create a block, they can create a block immediately, and only broadcast to the next bad node in the list. The second bad node can then wait 10 seconds, sign the node, and then broadcast it normally. The chain with the two bad nodes will be accepted since it is longer. While this attack is normally harmless it does allow colluding bad nodes to take control of the network with only 25% +1 of the nodes if the nodes happen to be optimally placed.
+If nodes are in the order _<Bad Node> <Good Node> <Bad Node>_, then the two bad nodes can collude to skip over the good node. When it's the first bad node’s turn to create a block, it can create a block immediately, and only broadcast to the next bad node in the list. The second bad node can then wait 10 seconds, sign the node, and then broadcast it normally. The chain with the two bad nodes will be accepted since it is longer. While this attack is normally harmless it does allow colluding bad nodes to take control of the network with only 25% +1 of the nodes if the nodes happen to be optimally placed.
 
 ### Incubation Periods
 All new Swift Citizens that join the Swift Protocol will be placed into an incubation period of one week. This prevents Identity Providers from creating fake accounts to quickly create a bunch of fake Swifts and gives Nodes sufficient time to ban the offending Identity Provider.
@@ -191,40 +191,40 @@ Due to the fact that the Swift Protcol directly interact with the real world thr
 * Identity Providers should shield the user from the knowledge that there is a one week incubation period and the fact that transactions can take a few second to process. From the user perspective it is important that SwiftDemand appears to function as efficiently as a centralized system. In the event where something does go wrong it is the responsibility of the Identity Provider to take the loss to rememedy the situation.
 
 ## Connection To SwiftDemand
-SwiftDemand is separate from the Swift Protocol, however they are tightly connected and currently being developed by the same team. SwiftDemand will be the initial Identity Provider on the Swift Protocol and all Swifts that exist on SwiftDemand at the time of launching the Swift Mainnet will be transferred at a 1:1 ratio. Swift Citizens however will be required to undergo stricter Identity Verification requirements at this time to comply with KYC\[7] and AML\[8]. 
+SwiftDemand is separate from the Swift Protocol, however they are tightly connected and currently being developed by the same team. SwiftDemand will be the initial Identity Provider on the Swift Protocol and all Swifts that exist on SwiftDemand at the time of launching the Swift Mainnet will be transferred at a 1:1 ratio. Swift Citizens however will be required to undergo stricter Identity Verification requirements at this time to comply with KYC<a name="8">[8]</a> and AML<a name="9">[9]</a>. 
 
 ### SwiftDemand Features
 SwiftDemand is designed to be an extremely user friendly platform that requires no prior knowledge of cryptocurrency setting the standard for future Identity Providers. SwiftDemand also provides an API as well as a marketplace to make it as easy as possible to transfer Swifts for Goods and Services.
 
 ## References
 
-<a name="1">1.</a> https://www.mckinsey.com/global-themes/future-of-organizations-and-work/what-the-future-of-work-will-mean-for-jobs-skills-and-wages
+<a name="1">[1]</a> https://www.mckinsey.com/global-themes/future-of-organizations-and-work/what-the-future-of-work-will-mean-for-jobs-skills-and-wages
 
-\[1] https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#transaction-confirmation
+<a name="2">[2]</a> https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#transaction-confirmation
 
-\[2] https://www.youtube.com/watch?v=UC6RYwYPnpU
+<a name="3">[3]</a> https://www.youtube.com/watch?v=UC6RYwYPnpU
 
-\[3] https://usa.visa.com/run-your-business/small-business-tools/retail.html
+<a name="4">[4]</a> https://usa.visa.com/run-your-business/small-business-tools/retail.html
 
-\[4] https://en.bitcoin.it/wiki/Transaction_fees
+<a name="5">[5]</a> https://en.bitcoin.it/wiki/Transaction_fees
 
-\[5] https://bitcoin.org/bitcoin.pdf
+<a name="6">[6]</a> https://bitcoin.org/bitcoin.pdf
 
-\[6] http://docs.neo.org/en-us/
+<a name="7">[7]</a> http://docs.neo.org/en-us/
 
-\[7] https://en.wikipedia.org/wiki/Know_your_customer
+<a name="8">[8]</a> https://en.wikipedia.org/wiki/Know_your_customer
 
-\[8] https://www.investopedia.com/terms/a/aml.asp
+<a name="9">[9]</a> https://www.investopedia.com/terms/a/aml.asp
 
-\[9] https://github.com/CirclesUBI/docs/blob/master/Circles.md
+<a name="10">[10]</a> https://github.com/CirclesUBI/docs/blob/master/Circles.md
 
 **Note**
-This Swift Protocol is designed to evolve over time, improvements will be made as new technology is developed or it becomes clear that a change would improve the system. The core principal of Universal Basic Income will NEVER change.
+This Swift Protocol is designed to evolve over time. Improvements will be made as new technology is developed or it becomes clear that a change would improve the system. The core principal of Universal Basic Income will NEVER change.
 
 Here are examples of changes / improvements that may come in the future:
-* Identity verification may be performed in a decentralized manner similar to circles \[9] if proven effective against Sybil attacks
-* Separating the responsibility of running a platform from verifying identities
-* Bounty program to find Sybils
-* A smart contract enforced insurance system provided by Identity Providers
-* Having subsystems for individual countries with unique currencies while remaining automatically exchangable
-* Hashed biometric data stored on the chain as added protection against Sybil attacks
+* Identity verification performed in a decentralized manner similar to circles <a name="10">[10]</a>--if proven effective against sybil attacks.
+* Separating the responsibility of running a platform from verifying identities.
+* A bounty program to find sybils.
+* A smart contract-enforced insurance system provided by identity providers.
+* Having subsystems for individual countries with unique currencies while remaining automatically exchangable.
+* Hashed biometric data stored on the chain as added protection against sybil attacks.
