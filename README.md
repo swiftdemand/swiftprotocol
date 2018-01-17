@@ -1,11 +1,11 @@
 # Swift Protocol White Paper
 
-The Swift Protocol is a DAO based protocol that implements the concept of Universal Basic Income (UBI)
+The Swift Protocol is a DAO-based protocol that implements the concept of Universal Basic Income (UBI)
 
 **https://www.swiftdemand.com/**
 
 ## Abstract
-The Swift Protocol is an implementation of a Decentralized Autonomous Organization (DAO) that provides Universal Basic Income. The Swift currency is desgined to be used a transactional currency and has been designed with low transaction latency, ability to scale to thousands of transactions per second, low transaction fees, and dispute resolution for transaction. Income is distributed on a daily basis to all participants and represents the concept of UBI. This paper is written to give a clear understanding of how the Swift Protocol works while remaining simple to read.
+The Swift Protocol is an implementation of a Decentralized Autonomous Organization (DAO) that provides Universal Basic Income. The Swift currency is designed to be used as a transactional currency. It has been designed for low transaction latency[§](#transaction-latency), the ability to scale to thousands of transactions per second[§](#transactions-per-second), low transaction fees[§](#low-transaction-fees), and dispute resolution for transactions[§](#buyer--seller-protections). Income is distributed on a daily basis to all participants and represents the concept of UBI. This paper is written to give a clear understanding of how the Swift Protocol works while remaining simple to read.
 
 - [Introduction](#introduction)
 - [Account Types](#account-types)
@@ -22,10 +22,10 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
   * [Elections](#elections)
   * [Election Durations](#election-durations)
   * [Delegated Node Voting](#delegated-node-voting)
-- [Transaction Capabilities](#transaction-capabilties)
+- [Transaction Capabilities](#transaction-capabilities)
   * [Transactions Per Second](#transactions-per-second)
   * [Low Transaction Fees](#low-transaction-fees)
-  * [Buyer / Seller Protections](#buyer-/-seller-protections)
+  * [Buyer / Seller Protections](#buyer--seller-protections)
   * [Transaction Latency](#transaction-latency)
 - [Compensation](#compensation)
   * [Delegated Node Salary](#delegated-node-salary)
@@ -47,7 +47,7 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
 - [References](#references)
 
 ## Introduction
-Universal Basic Income is a critical societal movement that must exist for the world to continue to function as jobs continue to be replaced by automation\[0]. We live in a world with more abundent resources than ever before, yet there are still people who struggle to make ends meet. It is our duty as humans to ensure that every person has access to the core neccessities needed for life. The Swift Protocol is a proposal that lays the framework for a DAO with the sole purpose of distributing Universal Basic Income. Worldwide adoption of the Swift Protocol will allow the dream of Universal Basic Income to become realized. The protocol has been designed with practical and proven solutions with additional functionality to aid mass adoption. The Swift Protocol will truly revolutionize society by making basic income a sacred human right.
+Universal Basic Income is a critical societal movement that must exist for the world to continue to function as jobs continue to be replaced by automation<sup>[[1]](#1)</sup>. We live in a world with more abundent resources than ever before, yet there are still people who struggle to make ends meet. It is our duty as humans to ensure that every person has access to the core neccessities needed for life. The Swift Protocol is a proposal that lays the framework for a DAO with the sole purpose of distributing Universal Basic Income. Worldwide adoption of the Swift Protocol will allow the dream of Universal Basic Income to become realized. The protocol has been designed with practical and proven solutions with additional functionality to aid mass adoption. The Swift Protocol will truly revolutionize society by making basic income a sacred human right.
 
 ## Account Types
 The Swift Protocol functions as a DAO that allows for real world governance to interconnect with the blockchain. Accounts have the ability to vote on certain events that affect how the Swift Protcol functions. This allows the Swift Protocol to react naturally to real world events by remaining in a fluid state. The Swift Protocol is decentralized to avoid single points of failure while still enabling identity verification and financial controls.
@@ -198,7 +198,7 @@ SwiftDemand is designed to be an extremely user friendly platform that requires 
 
 ## References
 
-\[0] https://www.mckinsey.com/global-themes/future-of-organizations-and-work/what-the-future-of-work-will-mean-for-jobs-skills-and-wages
+<a name="1">1.</a> https://www.mckinsey.com/global-themes/future-of-organizations-and-work/what-the-future-of-work-will-mean-for-jobs-skills-and-wages
 
 \[1] https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md#transaction-confirmation
 
