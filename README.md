@@ -77,7 +77,7 @@ Swifts are distributed to users on a daily basis with a maximum of seven unclaim
 The total number of Swifts targeted to be added to the economy in Stage One is 80 Billion. After this stage has been reached, Stage Two will limit the amount of new Swifts that enter the economy to a healthy inflation rate.
 
 ### Stage One
-In the Stage One, income will be generated at an accelerated rate so the economy can grow to maturity within a shorter time period. During this stage, Swift Citizens will receive Swifts dependent on the amount of Swift Citizens that are in the ecosystem. The formula to calculate the _Income Distribution Multiplier_ is as follows: `(781250 / (5^(log10(users))))` with a maximum value of 100, and minimum value of 1.
+In the Stage One, income will be generated at an accelerated rate so the economy can grow to maturity within a shorter time period. During this stage, Swift Citizens will receive Swifts dependent on the number of Swift Citizens that are in the ecosystem. The formula to calculate the _Income Distribution Multiplier_ is as follows: `(781250 / (5^(log10(users))))` with a maximum value of 100, and minimum value of 1.
 
 ### Stage Two
 After the 80 Billion cap has been reached by following the formula of Stage One, Stage Two will come into effect. During this stage, new Swifts will be given out to users at an inflation rate decided by the [Delegated Nodes](#delegated-node-voting) to all users in the ecosystem. It's their responsibility to choose an inflation rate that will avoid devaluing existing currency while ensuring the distribution is sufficiently large.
