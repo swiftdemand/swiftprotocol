@@ -148,7 +148,7 @@ A new consensus mechanism is used in the Swift Protocol that allows for extremel
 When Delegated Nodes are elected, they are placed into a list of blocks that are permitted to forge blocks, ordered by the amount of votes received. Nodes will then take turns forging blocks round-robin. When it's a node's turn to create a block, they will have a ten-second window to forge a block. If no block is forged during this duration, the next Delegated Node on the list will also have permission to forge a new block. This will be achieved by using a timestamp server <sup>[[6]](#6)</sup>.
 
 ### Consensus
-Consensus is decided by following the longest chain. Delegated Nodes that attempt to perform a double-spend attacks by signing multiple blocks will promptly be [banned by other Delegated Nodes](#delegated-node-voting).
+Consensus is decided by following the longest chain. Delegated Nodes that attempt to perform a double-spend attack by signing multiple blocks will promptly be [banned by other Delegated Nodes](#delegated-node-voting).
 
 ## Protections
 
