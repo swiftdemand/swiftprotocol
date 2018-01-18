@@ -153,7 +153,7 @@ Consensus is decided by following the longest chain. Delegated Nodes that attemp
 ## Protections
 
 ### Skip Attack 
-If nodes are in the order _<Bad Node> <Good Node> <Bad Node>_, then the two bad nodes can collude to skip over the good node. When it's the first bad node’s turn to create a block, it can create a block immediately, and only broadcast to the next bad node in the list. The second bad node can then wait ten seconds, sign the node, and then broadcast it normally. The chain with the two bad nodes will be accepted since it's longer. While this attack is normally harmless, it does allow colluding bad nodes to take control of the network with only 25% +1 of the nodes if the nodes happen to be optimally placed.
+If nodes are in the order `<Bad Node> <Good Node> <Bad Node>`, then the two bad nodes can collude to skip over the good node. When it's the first bad node’s turn to create a block, it can create a block immediately, and only broadcast to the next bad node in the list. The second bad node can then wait ten seconds, sign the node, and then broadcast it normally. The chain with the two bad nodes will be accepted since it's longer. While this attack is normally harmless, it does allow colluding bad nodes to take control of the network with only 25% +1 of the nodes if the nodes happen to be optimally placed.
 
 ### Incubation Period
 All new Swift Citizens that join the Swift Protocol will be placed into an incubation period of one week. This prevents an Identity Provider from creating fake Swift Citizens to quickly create Swifts for themselves--and gives Delegated Nodes sufficient time to ban the offending Identity Provider.
