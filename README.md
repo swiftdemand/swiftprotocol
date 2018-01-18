@@ -172,17 +172,17 @@ Due to the fact that the Swift Protcol directly interacts with the real world th
 
 * Regional tiers should be based on the cost-of-living associated with the geographical region of which the Swift Citizen is a legal resident.
 * Identity Providers should share a decentralized internal system of identites to guarantee Sybil accounts cannot be created. The internal system should also make any potential transitions of Swift Citizens easier to accomplish.
-* Delegated Nodes should be [banned](#delegated-node-voting) for the following reasons.
+* Delegated Nodes should be [banned](#delegated-node-voting) for the following reasons:
   * Regularly not performing their duty to vote on proposals.
   * Not forging new blocks during their turn within dBFT.
   * Refusal to include block data that does not support them.
   * Unreasonable policy voting that demonstrates harmful favoritism.
 * Official announcements should always be signed to protect against forgery.
-* The inflation rate should be balanced with the following factors in mind.
+* The inflation rate should be balanced with the following factors in mind:
   * Avoiding an inflation rate that would overly devalue existing Swifts.
   * Real-world effects that would result from a change in the rate.
   * The amount of income required to provide the basic neccesities in life.
-* Identity Providers should be [banned](#delegated-node-voting) for the following reasons.
+* Identity Providers should be [banned](#delegated-node-voting) for the following reasons:
   * Weak approval process allowing sybil accounts--whether due to malice or negligence.
   * Failing to provide adequate dispute resolution for transactions.
   * Not performing their duty to approve new Swift Citizens.
