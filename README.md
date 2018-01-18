@@ -98,17 +98,17 @@ Each Swift Citizen has the ability to cast one vote on the network during each e
 Elections will occur every six months for the first five years. Citizens will have a two-week time period in which they may cast their vote for their preferred Delegated Node. After the voting period has ended, a one-month grace period will begin--giving time for newly-elected nodes to prepare for their responsibility, and to prevent any potential splits in the chain.
 
 ### Delegated Node Voting
-Nodes have the following abilities
-* Elect new Identity Providers
-* Ban existing Identity Providers
-* Revert the chain state to some time within the past 72 hours
-* Ban Delegated Nodes
-* Elect replacement Delegated Nodes
-* Choose the [regional tiered-income levels](#region-multiplier)
-* Choose the inflation rate in [Stage Two](#stage-two)
-* Vote on the [salary for Delegated Nodes](#delegated-node-salary)
-* Vote on the [Salary Multiplier for Identity Providers](#identity-provider-salary)
-* Vote to approve or disapprove Fund Proposals
+Delegated Nodes have the following abilities
+* Elect new Identity Providers.
+* Ban existing Identity Providers.
+* Revert the chain state to some time within the past 72 hours.
+* Ban Delegated Nodes.
+* Elect replacement Delegated Nodes.
+* Choose the [regional tiered-income levels](#region-multiplier).
+* Choose the inflation rate in [Stage Two](#stage-two).
+* Vote on the [salary for Delegated Nodes](#delegated-node-salary).
+* Vote on the [Salary Multiplier for Identity Providers](#identity-provider-salary).
+* Vote to approve or disapprove [funding proposals](#funding-proposals).
 
 To perform these abilities, a proposal must be submitted to the blockchain by one Delegated Node. All other Delegated Nodes on the network will then vote on the proposal. Any proposal that receives 50% + 1 votes within 24 hours of submission will be executed.
 
