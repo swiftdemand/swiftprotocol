@@ -124,6 +124,7 @@ Delegated Nodes have the following abilities
 To perform these abilities, a proposal must be submitted to the blockchain by one Delegated Node. All other Delegated Nodes on the network will then vote on the proposal. Any proposal that receives 50% + 1 votes within 24 hours of submission will be executed.
 
 ## Transaction Capabilities
+The Swift Protocol is built to be a transactional currency. This means that exchanging money in the form of Swifts needs to be *at least* as convenient and safe as traditional banking systems. Four main factors have been focused on that will allow transferring Swifts to be as simple as clicking a button or swiping a credit card.
 
 ### Transactions Per Second
 Due to the controlled nature of the Delegated Node network, nodes can work to forge blocks extremely fast with a targeted time of three seconds per block. Other algorithms that have implemented proof-of-stake algorithms (such as EOS--which has the same functionality of having selected speaker nodes that forge blocks<sup>[[2]](#2)</sup>) have proven that it's possible to scale such a system to 50,000 transactions per second<sup>[[3]](#3)</sup>. For comparison, Visa is able to scale to 24,000 TPS <sup>[[4]](#4)</sup>.
