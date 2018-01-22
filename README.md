@@ -79,6 +79,8 @@ Identity Providers are responsible for validating the identity of Swift Citizens
 * Rescue orphaned Swift Citizens
 
 ## Income Distribution
+The goal of the Swift Protocol income distribution model is to provide a fair method of providing Swifts to all Swift Citizens. The distribution method also must ensure that the amount of Swifts entering the system should never cause a decrease in value. To more quickly reach the state where a mature economy has formed, early users will receive extra daily Swifts during Stage One.
+
 Swifts are distributed to users on a daily basis with a maximum of seven unclaimed days of Swifts. A Swift Citizen must explicity claim their Swifts at least once per week to convert their *Unclaimed Swifts* to normal *Swifts*. Days are marked by blocks that occur between 00:00 UTC to 23:59 UTC.
 
 The total number of Swifts targeted to be added to the economy in Stage One is 80 Billion. After this stage has been reached, Stage Two will limit the amount of new Swifts that enter the economy to a healthy inflation rate.
