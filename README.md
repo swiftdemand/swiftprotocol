@@ -165,6 +165,7 @@ When Delegated Nodes are elected, they are placed into an ordered list of Delega
 Consensus is decided by following the longest chain. Delegated Nodes that attempt to perform a double-spend attack by signing multiple blocks will promptly be [banned by other Delegated Nodes](#delegated-node-voting).
 
 ## Protections
+Due to the decentralized government system implemented by the Swift Protocol, there are potential attack vectors that should be carefully analyzed. These attacks have been outlined along with their potential impact and preventative measures.
 
 ### Skip Attack 
 If nodes are in the order `<Bad Node> <Good Node> <Bad Node>`, then the two bad nodes can collude to skip over the good node. When it's the first bad node’s turn to create a block, it can create a block immediately, and only broadcast to the next bad node in the list. The second bad node can then wait ten seconds, sign the node, and then broadcast it normally. The chain with the two bad nodes will be accepted since it's longer. While this attack is normally harmless, it does allow colluding bad nodes to take control of the network with only 25% +1 of the nodes if the nodes happen to be optimally placed.
