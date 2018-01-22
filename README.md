@@ -98,6 +98,8 @@ Several different income tiers will exist based on the cost of living associated
 When a new Swift Citizen joins, there's an option to include the public key of the Swift Citizen that referred them. Referral bonuses are calculated using `5 * Income Distribution Multiplier`. For example, if there are 100,000 Swift Citizens at the time of a referral, the bonus would be 500 Swifts. 
 
 ## DAO Based Governance
+Governance is an integral part of the Swift Protocol as it allows for outside data to be safely used for identity verification and economic control. However, the decentralized and autonomous elements of the Swift Protocol allow certain rules to be set in stone. These rules ensure a fair system exists where nobody has the ability to cheat in a way that is possible with centralized systems.
+
 The Swift Protocol features an internal system that simulates a decentralized government. Swift Citizens have the responsibility to elect representitives known as [Delegated Nodes](#delegated-nodes) that will have various powers within the government. These Delegated Nodes are required to both maintain the blockchain, forge new blocks, and vote on proposals.
 
 ### Election of Delegated Nodes
