@@ -1,11 +1,11 @@
-# Swift Protocol White Paper
+# Swift Protocol White Paper (Draft)
 
 The Swift Protocol is a DAO-based protocol that implements a Universal Basic Income (UBI)
 
 **https://www.swiftdemand.com/**
 
 ## Abstract
-The Swift Protocol is an implementation of a Decentralized Autonomous Organization (DAO) that provides Universal Basic Income. The Swift currency is designed to be used as a transactional currency. It has been designed for [low transaction latency](#transaction-latency), the ability to [scale to thousands of transactions per second](#transactions-per-second), [low transaction fees](#low-transaction-fees), and [dispute resolution for transactions](#buyer--seller-protections). Income is distributed on a daily basis to all participants and represents a UBI. This paper is written to give a clear understanding of how the Swift Protocol works while remaining simple to read.
+The Swift Protocol is an implementation of a Decentralized Autonomous Organization (DAO) that provides Universal Basic Income. The Swift currency is designed to be used as a transactional currency. It has been designed for [low transaction latency](#transaction-latency), the ability to [scale to thousands of transactions per second](#transactions-per-second), [low transaction fees](#low-transaction-fees), and [dispute resolution for transactions](#buyer--seller-protections). Income is distributed on a daily basis to all participants and represents a UBI. This paper is written to give a clear understanding of how the Swift Protocol works while remaining simple to understand.
 
 - [Introduction](#introduction)
 - [Account Types](#account-types)
@@ -50,7 +50,14 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
 Universal Basic Income is a critical societal movement that must exist for the world to continue to function as jobs continue to be replaced by automation<sup>[[1]](#1)</sup>. We live in a world with more abundant resources than ever before, yet there are still people who struggle to make ends meet. It is our duty as humans to ensure that every person has access to the core necessities of life. The Swift Protocol is a proposal that lays the framework for a DAO with the purpose of distributing Universal Basic Income. Worldwide adoption of the Swift Protocol will allow the dream of Universal Basic Income to become realized. The protocol has been designed with practical and proven solutions, with additional functionality to aid mass adoption.
 
 ## Account Types
-The Swift Protocol functions as a DAO that allows for real-world governance to interconnect with the blockchain. Accounts have the ability to vote on certain events that affect how the Swift Protcol functions. This allows the Swift Protocol to react naturally to real-world events by remaining in a fluid state. The Swift Protocol is decentralized to avoid single points of failure while still enabling identity verification and financial controls.
+To create a transactional currency that provides basic income, some form of structure is required to ensure the following remain true:
+
+1. A unique individual should only be allowed to have one account that receives basic income.
+2. Accounts not tied to individual identities must be permitted to exist for business and privacy reasons.
+3. The system must remain decentralized to avoid single points of failure.
+4. Rules must be able to be modified over time to allow for the changing needs of an active economy.
+
+To solve these issues the Swift Protocol proposes 4 different account types that together, fill these different responsibilities.
 
 ### Swift Citizens
 Swift Citizens are unique inidividuals that have been validated by an [Identity Provider](#identity-providers). Citizens have the ability to add claims to the blockchain once every day (days begin and end at midnight UTC). Swifts will be awarded based on the number of days passed--with a maximum of seven. For example, if the three days have passed and a user makes a claim with the current production rate at 100 Swifts, 300 Swifts will be awarded.
@@ -59,7 +66,7 @@ Swift Citizens are unique inidividuals that have been validated by an [Identity 
 Swift Entities are not connected to a personal real-world identity and therefore do not receive Basic Income. These accounts still must be approved by Identity Providers before being created. An Identity Provider must be linked to all Swift Entities, however Identity Providers are not allowed to make transactions on behalf of a Swift Account. Delegated Nodes and Identity Providers both inherit from the Swift Account type.
 
 ### Delegated Nodes
-Delegated Nodes are responsibile for maintaining full nodes and creating new blocks. Each election cycle Swift Citizens will sign votes to help choose which Delegated Nodes they would like to represent them. Delegated nodes have the capability to vote on proposals to add/remove other Delegated Nodes and Identity Providers.
+Delegated Nodes are responsibile for maintaining full nodes and creating new blocks. Each election cycle Swift Citizens will sign votes to help choose which Delegated Nodes they would like to represent them. This means that Delegated Nodes act as elected officials with the capability to vote on proposals to add/remove other Delegated Nodes and Identity Providers.
 
 ### Identity Providers
 Identity Providers are responsible for validating the identity of Swift Citizens and creating new citizens by generating a keypair for each new Swift Citizen and including the idenentity on the blockchain. Identity Providers have the added responsibility of protecting Swift Citizens whose keys they control with buyer and seller protections.
