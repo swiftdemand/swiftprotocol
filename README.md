@@ -83,13 +83,13 @@ The goal of the Swift Protocol income distribution model is to provide a fair me
 
 Swifts are distributed to users on a daily basis with a maximum of seven unclaimed days of Swifts. A Swift Citizen must explicity claim their Swifts at least once per week to convert their *Unclaimed Swifts* to normal *Swifts*. Days are marked by blocks that occur between 00:00 UTC to 23:59 UTC.
 
-The total number of Swifts targeted to be added to the economy in Stage One is 80 Billion. After this stage has been reached, Stage Two will limit the amount of new Swifts that enter the economy to a healthy inflation rate.
+The total number of Swifts targeted to be added to the economy in Stage One is 70 Billion. After this stage has been reached, Stage Two will limit the amount of new Swifts that enter the economy to a healthy inflation rate.
 
 ### Stage One
 In Stage One, income will be generated at an accelerated rate so the economy can grow to maturity within a shorter time period. During this stage, Swift Citizens will receive Swifts dependent on the number of Swift Citizens that are in the ecosystem. The formula to calculate the _Income Distribution Multiplier_ is as follows: `(781250 / (5^(log10(users))))` with a maximum value of 100, and minimum value of 1.
 
 ### Stage Two
-After the 80 Billion cap has been reached by following the formula of Stage One, Stage Two will come into effect. During this stage, new Swifts will be given out to users at an inflation rate decided by the [Delegated Nodes](#delegated-node-voting) to all users in the ecosystem. It's their responsibility to choose an inflation rate that will avoid devaluing existing currency while ensuring the distribution is sufficiently large.
+After the 70 Billion cap has been reached by following the formula of Stage One, Stage Two will come into effect. During this stage, new Swifts will be given out to users at an inflation rate decided by the [Delegated Nodes](#delegated-node-voting) to all users in the ecosystem. It's their responsibility to choose an inflation rate that will avoid devaluing existing currency while ensuring the distribution is sufficiently large.
 
 ### Region Multiplier
 Several different income tiers will exist based on the cost of living associated with each region. The tiers and the multipliers associated with them will be decided by the [Delegated Nodes](#delegated-node-voting). The region that each citizen belongs to will be validated by [Identity Providers](#identity-providers) when added to the blockchain. These multipliers will range between 0.01x to 1.0x.
@@ -150,7 +150,7 @@ Delegated Nodes will each receive an equal salary. The Delegated Nodes themselve
 The _Salary Multiplier_ for Identity Providers is decided by the Delegated Nodes. An Identity Provider's salary is determined by multiplying the number of Swifts that have been claimed by Citizens under that specific Identity Provider by the Salary Multiplier. For example, if the Salary Multiplier is 0.01 and the Identity Provider has 100,000 active validated citizens that claimed 5,000,000 Swifts during that day, the Identity Provider will receive 50,000 Swifts at the first block after midnight UTC. 
 
 ## Reserved Funds
-20 Billion Swifts will be reserved; these Swifts are not controlled by any central source. Delegated Nodes have the ability to award these funds to proposals with a majority vote. It's the responsibility of the Delegated Nodes to assign these funds on an as-needed basis to Identity Providers, Delegated Nodes, Swift Citizens, or Swift Entities in an effort to further the success of the Swift Protocol.
+30 Billion Swifts will be reserved; these Swifts are not controlled by any central source. Delegated Nodes have the ability to award these funds to proposals with a majority vote. It's the responsibility of the Delegated Nodes to assign these funds on an as-needed basis to Identity Providers, Delegated Nodes, Swift Citizens, or Swift Entities in an effort to further the success of the Swift Protocol.
 
 ### Funding Proposals
 When a Swift Citizen or Identity Provider requires funds to perform some task, they must submit a public funding proposal. This proposal will be written in plain text, signed with the requester's private key and then added to the blockchain. Nodes will then have one week to vote on the proposal. Non-votes are counted as "No"s. A majority consensus is required for the funds to be transferred.
