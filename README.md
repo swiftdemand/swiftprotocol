@@ -141,7 +141,7 @@ A single confirmation of a transaction will usually occur within three seconds a
 ## Compensation
 Compensation for Delegated Nodes and Identity Providers are a core part of the Swift Protocol. This compensation is used to heavily disincentivize bad behavior as these bad actions would result in heavy financial losses. Compensation also has the added benefit of making sure that the entire economy can continue to run smoothly for an indefinite period of time as funds will never be depleted.
 
-Both Delegated Nodes and Identity Providers receive a salary in Swifts for their service. Salary will be paid out on a daily basis at the same time Swift Citizens receive their daily income. The Swifts generated will initially be drawn from the 80% pool dedicated to regular Swift distribution. Once that pool has been fully distributed, Swifts for salaries will be created in addition to the Stage Two inflation distribution.
+Both Delegated Nodes and Identity Providers receive a salary in Swifts for their service. Salary will be paid out on a daily basis at the same time Swift Citizens receive their daily income. The Swifts generated will initially be drawn from the 70% pool dedicated to regular Swift distribution. Once that pool has been fully distributed, Swifts for salaries will be created in addition to the Stage Two inflation distribution.
 
 ### Delegated Node Salary
 Delegated Nodes will each receive an equal salary. The Delegated Nodes themselves will vote on their own salary--with the constraint that the salary must stay within a certain percentage of the previous salary. In the event that Delegated Nodes attempt to abuse this power, it's the responsibility of Swift Citizens to [vote out the nodes](#elections).
