@@ -156,7 +156,7 @@ The _Salary Multiplier_ for Identity Providers is decided by the Delegated Nodes
 When a Swift Citizen or Identity Provider requires funds to perform some task, they must submit a public funding proposal. This proposal will be written in plain text, signed with the requester's private key and then added to the blockchain. Nodes will then have one week to vote on the proposal. Non-votes are counted as "No"s. A majority consensus is required for the funds to be transferred.
 
 ## Consensus Protocol
-A new consensus mechanism is used in the Swift Protocol that allows for extremely fast block times while still being trustable. The Swift Protocol uses a new consensus mechanism called DPOI (delegated Proof of Identity). The mechanism works almost identitally to DPOS (delegated Proof of Stake). The primary difference is that in DPOS people have a say proportional to the amount of stake they own in the currency. In DPOI, each Swift Citizen has the ability to cast a single vote regardless of the stake they own.
+A new consensus mechanism is used in the Swift Protocol that allows for extremely fast block times while still being trustable. The Swift Protocol uses a new consensus mechanism called DPOI (delegated Proof of Identity). The mechanism works almost identitally to DPOS (delegated Proof of Stake) <sup>[[7]](#7)</sup>. The primary difference is that in DPOS people have a say proportional to the amount of stake they own in the currency. In DPOI, each Swift Citizen has the ability to cast a single vote regardless of the stake they own.
 
 ### Selecting Forgers
 When Delegated Nodes are elected, they are placed into an ordered list of Delegated Nodes that are permitted to forge blocks. The ordering is determined by the amount of votes that each Delegated Node has received during an election. Nodes will then take turns forging blocks round-robin. When it's a node's turn to create a block, they will have a ten-second window to forge a block. If no block is forged during this duration, the next Delegated Node on the list will also have permission to forge a new block. This will be achieved by using a timestamp server <sup>[[6]](#6)</sup>.
@@ -225,7 +225,7 @@ SwiftDemand is designed to be an extremely user-friendly platform that requires 
 
 <a name="6">[6]</a> https://bitcoin.org/bitcoin.pdf
 
-<a name="7">[7]</a> http://docs.neo.org/en-us/
+<a name="7">[7]</a> https://www.researchgate.net/publication/318131748_An_Overview_of_Blockchain_Technology_Architecture_Consensus_and_Future_Trends
 
 <a name="8">[8]</a> https://en.wikipedia.org/wiki/Know_your_customer
 
