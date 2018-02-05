@@ -10,7 +10,7 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
 - [Introduction](#introduction)
 - [Account Types](#account-types)
   * [Swift Citizens](#swift-citizens)
-  * [Swift Entities](#swift-entites)
+  * [Swift Entities](#swift-entities)
   * [Delegated Nodes](#delegated-nodes)
   * [Identity Providers](#identity-providers)
 - [Income Distribution](#income-distribution)
@@ -19,7 +19,7 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
   * [Region Multiplier](#region-multiplier)
   * [Referral System](#referral-system)
 - [DAO based governance](#dao-based-governance)
-  * [Elections](#elections)
+  * [Election of Delegated Nodes](#election-of-delegated-nodes)
   * [Election Duration](#election-duration)
   * [Delegated Node Voting](#delegated-node-voting)
 - [Transaction Capabilities](#transaction-capabilities)
@@ -60,7 +60,7 @@ To create a transactional currency that provides basic income, some form of stru
 To solve these issues the Swift Protocol proposes 4 different account types that together, fill these different responsibilities.
 
 ### Swift Citizens
-Swift Citizens are unique inidividuals that have been validated by an [Identity Provider](#identity-providers). Citizens have the ability to add claims to the blockchain once every day (days begin and end at midnight UTC). Swifts will be awarded based on the number of days passed--with a maximum of seven. For example, if the three days have passed and a user makes a claim with the current production rate at 100 Swifts, 300 Swifts will be awarded.
+Swift Citizens are unique individuals that have been validated by an [Identity Provider](#identity-providers). Citizens have the ability to add claims to the blockchain once every day (days begin and end at midnight UTC). Swifts will be awarded based on the number of days passed--with a maximum of seven. For example, if the three days have passed and a user makes a claim with the current production rate at 100 Swifts, 300 Swifts will be awarded.
 
 ### Swift Entities
 Swift Entities are not connected to a personal real-world identity and therefore do not receive Basic Income. These accounts still must be approved by Identity Providers before being created. An Identity Provider must be linked to all Swift Entities, however Identity Providers are not allowed to make transactions on behalf of a Swift Account. Delegated Nodes and Identity Providers both inherit from the Swift Account type.
@@ -69,7 +69,7 @@ Swift Entities are not connected to a personal real-world identity and therefore
 Delegated Nodes are responsibile for maintaining full nodes and creating new blocks. Each election cycle Swift Citizens will sign votes to help choose which Delegated Nodes they would like to represent them. This means that Delegated Nodes act as elected officials with the capability to vote on proposals to add/remove other Delegated Nodes and Identity Providers.
 
 ### Identity Providers
-Identity Providers are responsible for validating the identity of Swift Citizens and creating new citizens by generating a keypair for each new Swift Citizen and including the idenentity on the blockchain. Identity Providers have the added responsibility of protecting Swift Citizens whose keys they control with buyer and seller protections.
+Identity Providers are responsible for validating the identity of Swift Citizens and creating new citizens by generating a keypair for each new Swift Citizen and including the identity on the blockchain. Identity Providers have the added responsibility of protecting Swift Citizens whose keys they control with buyer and seller protections.
 
 **Identity Providers** have the following capabilities:
 * Add new Swift Citizens
@@ -144,7 +144,7 @@ Compensation for Delegated Nodes and Identity Providers are a core part of the S
 Both Delegated Nodes and Identity Providers receive a salary in Swifts for their service. Salary will be paid out on a daily basis at the same time Swift Citizens receive their daily income. The Swifts generated will initially be drawn from the 70% pool dedicated to regular Swift distribution. Once that pool has been fully distributed, Swifts for salaries will be created in addition to the Stage Two inflation distribution.
 
 ### Delegated Node Salary
-Delegated Nodes will each receive an equal salary. The Delegated Nodes themselves will vote on their own salary--with the constraint that the salary must stay within a certain percentage of the previous salary. In the event that Delegated Nodes attempt to abuse this power, it's the responsibility of Swift Citizens to [vote out the nodes](#elections).
+Delegated Nodes will each receive an equal salary. The Delegated Nodes themselves will vote on their own salary--with the constraint that the salary must stay within a certain percentage of the previous salary. In the event that Delegated Nodes attempt to abuse this power, it's the responsibility of Swift Citizens to [vote out the nodes](#election-of-delegated-nodes).
 
 ### Identity Provider Salary
 The _Salary Multiplier_ for Identity Providers is decided by the Delegated Nodes. An Identity Provider's salary is determined by multiplying the number of Swifts that have been claimed by Citizens under that specific Identity Provider by the Salary Multiplier. For example, if the Salary Multiplier is 0.01 and the Identity Provider has 100,000 active validated citizens that claimed 5,000,000 Swifts during that day, the Identity Provider will receive 50,000 Swifts at the first block after midnight UTC. 
@@ -196,7 +196,7 @@ Due to the fact that the Swift Protcol directly interacts with the real world th
 * The inflation rate should be balanced with the following factors in mind:
   * Avoiding an inflation rate that would overly devalue existing Swifts.
   * Real-world effects that would result from a change in the rate.
-  * The amount of income required to provide the basic neccesities in life.
+  * The amount of income required to provide the basic necessities in life.
 * Identity Providers should be [banned](#delegated-node-voting) for the following reasons:
   * Weak approval process allowing sybil accounts--whether due to malice or negligence.
   * Failing to provide adequate dispute resolution for transactions.
@@ -241,5 +241,5 @@ Here are examples of changes / improvements that may come in the future:
 * Separating the responsibility of running a platform from verifying identities.
 * A bounty program to find sybils.
 * A smart contract-enforced insurance system provided by identity providers.
-* Having subsystems for individual countries with unique currencies while remaining automatically exchangable.
+* Having subsystems for individual countries with unique currencies while remaining automatically exchangeable.
 * Hashed biometric data stored on the chain as added protection against sybil attacks.
