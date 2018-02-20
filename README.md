@@ -66,7 +66,7 @@ Swift Citizens are unique individuals that have been validated by an [Identity P
 Swift Entities are not connected to a personal real-world identity and therefore do not receive Basic Income. These accounts still must be approved by Identity Providers before being created. An Identity Provider must be linked to all Swift Entities, however Identity Providers are not allowed to make transactions on behalf of a Swift Account. Delegated Nodes and Identity Providers both inherit from the Swift Account type.
 
 ### Delegated Nodes
-Delegated Nodes are responsibile for maintaining full nodes and creating new blocks. Each election cycle Swift Citizens will sign votes to help choose which Delegated Nodes they would like to represent them. This means that Delegated Nodes act as elected officials with the capability to vote on proposals to add/remove other Delegated Nodes and Identity Providers.
+Delegated Nodes are responsible for maintaining full nodes and creating new blocks. Each election cycle Swift Citizens will sign votes to help choose which Delegated Nodes they would like to represent them. This means that Delegated Nodes act as elected officials with the capability to vote on proposals to add/remove other Delegated Nodes and Identity Providers.
 
 ### Identity Providers
 Identity Providers are responsible for validating the identity of Swift Citizens and creating new citizens by generating a keypair for each new Swift Citizen and including the identity on the blockchain. Identity Providers have the added responsibility of protecting Swift Citizens whose keys they control with buyer and seller protections.
@@ -81,7 +81,7 @@ Identity Providers are responsible for validating the identity of Swift Citizens
 ## Income Distribution
 The goal of the Swift Protocol income distribution model is to provide a fair method of providing Swifts to all Swift Citizens. The distribution method also must ensure that the amount of Swifts entering the system should never cause a decrease in value. To more quickly reach the state where a mature economy has formed, early users will receive extra daily Swifts during Stage One.
 
-Swifts are distributed to users on a daily basis with a maximum of seven unclaimed days of Swifts. A Swift Citizen must explicity claim their Swifts at least once per week to convert their *Unclaimed Swifts* to normal *Swifts*. Days are marked by blocks that occur between 00:00 UTC to 23:59 UTC.
+Swifts are distributed to users on a daily basis with a maximum of seven unclaimed days of Swifts. A Swift Citizen must explicitly claim their Swifts at least once per week to convert their *Unclaimed Swifts* to normal *Swifts*. Days are marked by blocks that occur between 00:00 UTC to 23:59 UTC.
 
 The total number of Swifts targeted to be added to the economy in Stage One is 70 Billion. After this stage has been reached, Stage Two will limit the amount of new Swifts that enter the economy to a healthy inflation rate.
 
@@ -100,7 +100,7 @@ When a new Swift Citizen joins, there's an option to include the public key of t
 ## DAO Based Governance
 Governance is an integral part of the Swift Protocol as it allows for outside data to be safely used for identity verification and economic control. However, the decentralized and autonomous elements of the Swift Protocol allow certain rules to be set in stone. These rules ensure a fair system exists where nobody has the ability to cheat in a way that is possible with centralized systems.
 
-The Swift Protocol features an internal system that simulates a decentralized government. Swift Citizens have the responsibility to elect representitives known as [Delegated Nodes](#delegated-nodes) that will have various powers within the government. These Delegated Nodes are required to both maintain the blockchain, forge new blocks, and vote on proposals.
+The Swift Protocol features an internal system that simulates a decentralized government. Swift Citizens have the responsibility to elect representatives known as [Delegated Nodes](#delegated-nodes) that will have various powers within the government. These Delegated Nodes are required to both maintain the blockchain, forge new blocks, and vote on proposals.
 
 ### Election of Delegated Nodes
 Each Swift Citizen has the ability to cast one vote on the network during each election of Delegated Nodes. The Delegated Nodes that receive the most votes will be elected to serve during that election cycle. The number of Delegated Nodes is decided by the following formula: `(10 + (swift_citizens/100000))`
@@ -130,7 +130,7 @@ The Swift Protocol is built to be a transactional currency. This means that exch
 Due to the controlled nature of the Delegated Node network, nodes can work to forge blocks extremely fast with a targeted time of three seconds per block. Other algorithms that have implemented proof-of-stake algorithms (such as EOS--which has the same functionality of having selected speaker nodes that forge blocks<sup>[[2]](#2)</sup>) have proven that it's possible to scale such a system to 50,000 transactions per second<sup>[[3]](#3)</sup>. For comparison, Visa is able to scale to 24,000 TPS <sup>[[4]](#4)</sup>.
 
 ### Low Transaction Fees
-Transactions have no inherent cost on SwiftDemand, however [Identity Providers](#identity-providers) have the ability to set transaction fees--allowing them to have funds to resolve transaction disputes. The Swift Protocol reserves 80% of each block to be used exclusively by Identity Providers. The space is further partitioned by Identity Provider--proportional to the number of Swift Citizens each has verified with a minimum of 10 transactions per block. It's therefore the responsibility of Identity Providers to ensure that spam transactions are not added to the chain. The remaining 20% of each block will be open for transactions with a bidding system--in a similar manner to how bitcoin functions <sup>[[5]](#5)</sup>.
+Transactions have no inherent cost on SwiftDemand, however [Identity Providers](#identity-providers) have the ability to set transaction fees--allowing them to have funds to resolve transaction disputes. The Swift Protocol reserves 80% of each block to be used exclusively by Identity Providers. The space is further partitioned by Identity Provider--proportional to the number of Swift Citizens each has verified with a minimum of 10 transactions per block. It's therefore the responsibility of Identity Providers to ensure that spam transactions are not added to the chain. The remaining 20% of each block will be open for transactions with a bidding system--in a similar manner to how Bitcoin functions <sup>[[5]](#5)</sup>.
 
 ### Buyer / Seller Protections
 Transactions are able to be signed either by a Swift Citizen's private key or the private key of an Identity Provider. This gives Identity Providers the ability to reverse transactions. Non-authorized transactions should only be used to settle disputes between buyer and sellers on the platform. When reversing funds is not possible, Identity Providers have the responsibility to use the money earned from transaction fees to settle any issues.
@@ -156,7 +156,7 @@ The _Salary Multiplier_ for Identity Providers is decided by the Delegated Nodes
 When a Swift Citizen or Identity Provider requires funds to perform some task, they must submit a public funding proposal. This proposal will be written in plain text, signed with the requester's private key and then added to the blockchain. Nodes will then have one week to vote on the proposal. Non-votes are counted as "No"s. A majority consensus is required for the funds to be transferred.
 
 ## Consensus Protocol
-A new consensus mechanism is used in the Swift Protocol that allows for extremely fast block times while still being trustable. The Swift Protocol uses a new consensus mechanism called DPOI (delegated Proof of Identity). The mechanism works almost identitally to DPOS (delegated Proof of Stake) <sup>[[7]](#7)</sup>. The primary difference is that in DPOS people have a say proportional to the amount of stake they own in the currency. In DPOI, each Swift Citizen has the ability to cast a single vote regardless of the stake they own.
+A new consensus mechanism is used in the Swift Protocol that allows for extremely fast block times while still being trustable. The Swift Protocol uses a new consensus mechanism called DPOI (delegated Proof of Identity). The mechanism works almost identically to DPOS (delegated Proof of Stake) <sup>[[7]](#7)</sup>. The primary difference is that in DPOS people have a say proportional to the amount of stake they own in the currency. In DPOI, each Swift Citizen has the ability to cast a single vote regardless of the stake they own.
 
 ### Selecting Forgers
 When Delegated Nodes are elected, they are placed into an ordered list of Delegated Nodes that are permitted to forge blocks. The ordering is determined by the amount of votes that each Delegated Node has received during an election. Nodes will then take turns forging blocks round-robin. When it's a node's turn to create a block, they will have a ten-second window to forge a block. If no block is forged during this duration, the next Delegated Node on the list will also have permission to forge a new block. This will be achieved by using a timestamp server <sup>[[6]](#6)</sup>.
@@ -174,7 +174,7 @@ If nodes are in the order `<Bad Node> <Good Node> <Bad Node>`, then the two bad 
 All new Swift Citizens that join the Swift Protocol will be placed into an incubation period of one week. This prevents an Identity Provider from creating fake Swift Citizens to quickly create Swifts for themselves--and gives Delegated Nodes sufficient time to ban the offending Identity Provider.
 
 ### Sybil Attacks
-Identity Providers are disincentivized from performing sybil attacks as it comes with the risk of getting banned from the platform by Delegated Nodes. Additional safeguards such as the [incubation period ](#incubation-period) and the [blockchain rollback capability of Delegated Nodes](#delegated-node-voting) also exist to help mitigate any abuse. Swift Citizens can attempt to submit fake documents to gain additional basic income, however they are disincentized from doing so since being caught would result in losing both sources of income. It's expected that a few fake accounts may be created, but Identity Providers will be required to have very strict levels of regulation on how they approve new Swift Citizens, which should eliminate most abuse.
+Identity Providers are disincentivized from performing Sybil attacks as it comes with the risk of getting banned from the platform by Delegated Nodes. Additional safeguards such as the [incubation period ](#incubation-period) and the [blockchain rollback capability of Delegated Nodes](#delegated-node-voting) also exist to help mitigate any abuse. Swift Citizens can attempt to submit fake documents to gain additional basic income, however they are disincentivized from doing so since being caught would result in losing both sources of income. It's expected that a few fake accounts may be created, but Identity Providers will be required to have very strict levels of regulation on how they approve new Swift Citizens, which should eliminate most abuse.
 
 ### Round Robin Order Attack
 A group of colluding bad actors could collude to all try to receive a similar number of votes, allowing them to be placed in similar locations within the round-robin ordering. (See [Selecting Forgers](#selecting-forgers).) A double-spend attack could then be completed with only a handful of bad nodes. This attack, however, can only occur once before being detected. Large transactions should wait for a sufficient amount of confirmations to combat this. Small transactions should be insured by Identity Providers.
@@ -183,10 +183,10 @@ A group of colluding bad actors could collude to all try to receive a similar nu
 In the event that an Identity Provider attempts to perform fraud, they can be banned by [Delegated Nodes](#delegated-node-voting). In the event that damage has already been caused by the action of the Identity Provider, Delegated Nodes can vote to revert the chain to a previous state with an Identity Provider banned. This will cause a large amount of economic damage, but is meant as a last resort to enable the Swift Protocol to not be devastated by an attack and to disincentivize Identity Providers from acting poorly. Swift Citizen accounts that belong to that Identity Provider would consequently be orphaned until they were claimed and validated by another Identity Provider.
 
 ## Constitution
-Due to the fact that the Swift Protcol directly interacts with the real world through decentralized governance, there are certain rules which cannot be programmatically enforced yet are crucial for the Swift Protocol to function as intended. Delegated Nodes or Identity Providers that perform actions in contradiction to the items listed in the constitution should be [banned](#delegated-node-voting).
+Due to the fact that the Swift Protocol directly interacts with the real world through decentralized governance, there are certain rules which cannot be programmatically enforced yet are crucial for the Swift Protocol to function as intended. Delegated Nodes or Identity Providers that perform actions in contradiction to the items listed in the constitution should be [banned](#delegated-node-voting).
 
 * Regional tiers should be based on the cost-of-living associated with the geographical region of which the Swift Citizen is a legal resident.
-* Identity Providers should share a decentralized internal system of identites to guarantee Sybil accounts cannot be created. The internal system should also make any potential transitions of Swift Citizens easier to accomplish.
+* Identity Providers should share a decentralized internal system of identities to guarantee Sybil accounts cannot be created. The internal system should also make any potential transitions of Swift Citizens easier to accomplish.
 * Delegated Nodes should be [banned](#delegated-node-voting) for the following reasons:
   * Regularly not performing their duty to vote on proposals.
   * Not forging new blocks during their turn within dBFT.
@@ -198,7 +198,7 @@ Due to the fact that the Swift Protcol directly interacts with the real world th
   * Real-world effects that would result from a change in the rate.
   * The amount of income required to provide the basic necessities in life.
 * Identity Providers should be [banned](#delegated-node-voting) for the following reasons:
-  * Weak approval process allowing sybil accounts--whether due to malice or negligence.
+  * Weak approval process allowing Sybil accounts--whether due to malice or negligence.
   * Failing to provide adequate dispute resolution for transactions.
   * Not performing their duty to approve new Swift Citizens.
   * Unwillingness to cooperate with other Identity Providers on the platform.
@@ -237,9 +237,9 @@ SwiftDemand is designed to be an extremely user-friendly platform that requires 
 This Swift Protocol is designed to evolve over time. Improvements will be made as new technology is developed or it becomes clear that a change would improve the system. The core principle of distributing a Universal Basic Income will NEVER change.
 
 Here are examples of changes / improvements that may come in the future:
-* Identity verification performed in a decentralized manner similar to circles <sup>[[10]](#10)</sup>--if proven effective against sybil attacks.
+* Identity verification performed in a decentralized manner similar to circles <sup>[[10]](#10)</sup>--if proven effective against Sybil attacks.
 * Separating the responsibility of running a platform from verifying identities.
-* A bounty program to find sybils.
+* A bounty program to find Sybil accounts.
 * A smart contract-enforced insurance system provided by identity providers.
 * Having subsystems for individual countries with unique currencies while remaining automatically exchangeable.
-* Hashed biometric data stored on the chain as added protection against sybil attacks.
+* Hashed biometric data stored on the chain as added protection against Sybil attacks.
