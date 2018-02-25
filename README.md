@@ -103,7 +103,7 @@ Governance is an integral part of the Swift Protocol as it allows for outside da
 The Swift Protocol features an internal system that simulates a decentralized government. Swift Citizens have the responsibility to elect representatives known as [Delegated Nodes](#delegated-nodes) that will have various powers within the government. These Delegated Nodes are required to both maintain the blockchain, forge new blocks, and vote on proposals.
 
 ### Election of Delegated Nodes
-Each Swift Citizen has the ability to cast one vote on the network during each election of Delegated Nodes. The Delegated Nodes that receive the most votes will be elected to serve during that election cycle. The number of Delegated Nodes is decided by the following formula: `(10 + (swift_citizens/100000))`
+Each Swift Citizen has the ability to cast one vote on the network during each election of Delegated Nodes. The Delegated Nodes that receive the most votes will be elected to serve during that election cycle. The number of Delegated Nodes is decided by the following formula: `Max(10, (swift_citizens/100000))`
 
 ### Election Duration
 Elections will occur every six months for the first five years. Citizens will have a two-week time period in which they may cast their vote for their preferred Delegated Node. After the voting period has ended, a one-month grace period will begin--giving time for newly-elected nodes to prepare for their responsibility, and to prevent any potential splits in the chain.
