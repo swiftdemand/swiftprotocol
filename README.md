@@ -16,7 +16,6 @@ The Swift Protocol is an implementation of a Decentralized Autonomous Organizati
 - [Income Distribution](#income-distribution)
   * [Stage One](#stage-one)
   * [Stage Two](#stage-two)
-  * [Region Multiplier](#region-multiplier)
   * [Referral System](#referral-system)
 - [DAO based governance](#dao-based-governance)
   * [Election of Delegated Nodes](#election-of-delegated-nodes)
@@ -90,9 +89,6 @@ In Stage One, income will be generated at an accelerated rate so the economy can
 
 ### Stage Two
 After the 70 Billion cap has been reached by following the formula of Stage One, Stage Two will come into effect. During this stage, new Swifts will be given out to users at an inflation rate decided by the [Delegated Nodes](#delegated-node-voting) to all users in the ecosystem. It's their responsibility to choose an inflation rate that will avoid devaluing existing currency while ensuring the distribution is sufficiently large.
-
-### Region Multiplier
-Several different income tiers will exist based on the cost of living associated with each region. The tiers and the multipliers associated with them will be decided by the [Delegated Nodes](#delegated-node-voting). The region that each citizen belongs to will be validated by [Identity Providers](#identity-providers) when added to the blockchain. These multipliers will range between 0.01x to 1.0x.
 
 ### Referral System
 When a new Swift Citizen joins, there's an option to include the public key of the Swift Citizen that referred them. Referral bonuses are calculated using `5 * Income Distribution Multiplier`. For example, if there are 100,000 Swift Citizens at the time of a referral, the bonus would be 500 Swifts. 
@@ -185,7 +181,7 @@ In the event that an Identity Provider attempts to perform fraud, they can be ba
 ## Constitution
 Due to the fact that the Swift Protocol directly interacts with the real world through decentralized governance, there are certain rules which cannot be programmatically enforced yet are crucial for the Swift Protocol to function as intended. Delegated Nodes or Identity Providers that perform actions in contradiction to the items listed in the constitution should be [banned](#delegated-node-voting).
 
-* Regional tiers should be based on the cost-of-living associated with the geographical region of which the Swift Citizen is a legal resident.
+* Users shall all be treated equal and given the same amount of Swifts regardless of their background.
 * Identity Providers should share a decentralized internal system of identities to guarantee Sybil accounts cannot be created. The internal system should also make any potential transitions of Swift Citizens easier to accomplish.
 * Delegated Nodes should be [banned](#delegated-node-voting) for the following reasons:
   * Regularly not performing their duty to vote on proposals.
