@@ -111,7 +111,6 @@ Delegated Nodes have the following abilities
 * Revert the chain state to some time within the past 72 hours.
 * Ban Delegated Nodes.
 * Elect replacement Delegated Nodes.
-* Choose the [regional tiered-income levels](#region-multiplier).
 * Choose the inflation rate in [Stage Two](#stage-two).
 * Vote on the [salary for Delegated Nodes](#delegated-node-salary).
 * Vote on the [Salary Multiplier for Identity Providers](#identity-provider-salary).
